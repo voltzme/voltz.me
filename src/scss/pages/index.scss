@@ -56,7 +56,10 @@
   &-features {
     display: flex;
     margin-top: 86px;
-    flex-wrap: wrap;
+
+    @media (max-width: 779px) {
+      flex-direction: column;
+    }
   }
 
   &-feature {
@@ -73,9 +76,13 @@
       padding: 0;
     }
 
-
     & + & {
       border-left: 1px solid #eee;
+
+      @media (max-width: 779px) {
+        border-left: none;
+        margin-top: 48px;
+      }
     }
   }
 }
@@ -100,13 +107,22 @@
 
     display: flex;
     list-style: none;
-    flex-wrap: wrap;
+
+    @media (max-width: 779px) {
+      flex-direction: column;
+    }
   }
 
   &-step {
     padding: 0;
     text-align: center;
     flex-grow: 1;
+
+    & + & {
+      @media (max-width: 779px) {
+        margin-top: 48px;
+      }
+    }
   }
 }
 
