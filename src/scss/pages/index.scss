@@ -1,0 +1,258 @@
+@keyframes main-intro-more {
+
+  0% {
+    bottom: 40px;
+  }
+
+  50% {
+    bottom: 48px;
+  }
+}
+
+.main-intro {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  padding: 40px 0;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, .88);
+
+
+  &-logo {
+    width: 160px;
+    margin-bottom: 28px;
+  }
+
+  &-title {
+    color: #fff;
+  }
+
+  &-more {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    animation: main-intro-more 1s ease-out infinite;
+  }
+}
+
+
+.main-info {
+  padding: 60px 0;
+
+  &-title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &-text {
+    text-align: center;
+  }
+
+  &-features {
+    display: flex;
+    margin-top: 86px;
+    flex-wrap: wrap;
+  }
+
+  &-feature {
+    flex-grow: 1;
+    text-align: center;
+    box-sizing: border-box;
+
+    &-title {
+      margin-bottom: 16px;
+    }
+
+    &-text {
+      margin: 0;
+      padding: 0;
+    }
+
+
+    & + & {
+      border-left: 1px solid #eee;
+    }
+  }
+}
+
+
+.main-process {
+  padding: 60px 0 100px;
+  background: #f1f6f9;
+
+  &-title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &-text {
+    text-align: center;
+  }
+
+  &-steps {
+    margin: 86px 0 0;
+    padding: 0;
+
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+  }
+
+  &-step {
+    padding: 0;
+    text-align: center;
+    flex-grow: 1;
+  }
+}
+
+
+.main-map {
+  padding: 60px 0 0;
+
+  &-title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &-text {
+    text-align: center;
+  }
+
+  &-map-wrapper {
+    margin-top: 40px;
+    height: 480px;
+    overflow: hidden;
+
+    @media (max-width: 1024px) {
+      height: 300px;
+    }
+  }
+
+  &-map {
+    background-color: #E6E6E6;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+
+    @media (max-width: 1280px) {
+      width: 120%;
+      margin-left: -10%;
+    }
+
+    @media (max-width: 1024px) {
+      width: 140%;
+      margin-left: -20%;
+    }
+
+    @media (max-width: 780px) {
+      width: 180%;
+      margin-left: -40%;
+    }
+
+    @media (max-width: 480px) {
+      width: 220%;
+      margin-left: -60%;
+    }
+
+    &.loaded {
+      background-image: url('../assets/google-map.png');
+    }
+  }
+}
+
+
+.main-faq {
+  padding: 60px 0;
+
+  &-title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &-items {
+    margin: 0 auto;
+    max-width: 480px;
+  }
+
+  &-item {
+    width: 100%;
+    padding: 20px 0 20px;
+    cursor: pointer;
+
+    &-question {
+      width: 100%;
+      display: flex;
+      align-items: center;
+
+      font-size: 24px;
+
+      & > span:first-child {
+        flex-grow: 1;
+      }
+    }
+
+    &-toggle {
+      background: url('../assets/main-faq-plus.svg') center no-repeat;
+      background-size: 24px 24px;
+      min-width: 24px;
+      max-width: 24px;
+      min-height: 24px;
+      max-height: 24px;
+
+      border-radius: 50%;
+      margin-left: 20px;
+      padding: 10px;
+      transition: all 0.2s linear;
+    }
+
+    &-answer {
+      margin-top: 20px;
+      overflow: hidden;
+      transition: height 0.2s linear;
+      position: absolute;
+      visibility: hidden;
+    }
+
+    &:hover {
+      .main-faq-item {
+        &-toggle {
+          background-color: #eee;
+        }
+      }
+    }
+
+    &.loaded {
+      .main-faq-item {
+        &-answer {
+          height: 0;
+          position: initial;
+          overflow: hidden;
+          visibility: visible;
+        }
+      }
+    }
+
+    &.open {
+      .main-faq-item {
+        &-toggle {
+          transform: rotate(45deg);
+        }
+      }
+    }
+
+    & + & {
+      border-top: 1px solid #eee;
+    }
+  }
+}
+
+.main-cta {
+  padding: 0 0 80px;
+  text-align: center;
+}
