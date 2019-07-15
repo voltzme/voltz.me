@@ -16,10 +16,12 @@
   justify-content: center;
   text-align: center;
   position: relative;
-  padding: 40px 0;
-  box-sizing: border-box;
   background: rgba(0, 0, 0, .88);
 
+  & > .container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 
   &-logo {
     width: 160px;
