@@ -22,12 +22,14 @@
     /></a>
     <h1 class="main-intro-title"><%= trans('main.intro.title') %></h1>
   </div>
-  <a href="#main" class="main-intro-more">
-    <img
-      src="<%= require('./assets/main-intro-icon-more.svg') %>"
-      alt="<%= trans('main.intro.more') %>"
-    />
-  </a>
+  <div class="main-intro-more-wrapper">
+    <a href="#main" class="main-intro-more">
+      <img
+        src="<%= require('./assets/main-intro-icon-more.svg') %>"
+        alt="<%= trans('main.intro.more') %>"
+      />
+    </a>
+  </div>
 </div>
 
 <div id="main"></div>

@@ -1,11 +1,11 @@
 @keyframes main-intro-more {
 
   0% {
-    bottom: 40px;
+    bottom: 0;
   }
 
   50% {
-    bottom: 48px;
+    bottom: 10px;
   }
 }
 
@@ -34,7 +34,13 @@
 
   &-more {
     position: absolute;
-    bottom: 40px;
+    bottom: 0;
+
+    margin-bottom: 40px;
+    @media (max-width: 420px) {
+      margin-bottom: 80px;
+    }
+
     left: 50%;
     transform: translateX(-50%);
 
