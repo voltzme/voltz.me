@@ -5,6 +5,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const webpack = require('webpack');
 const GetText = require('node-gettext');
 const GetTextParser = require('gettext-parser');
+const FaviconWebpackPlugin = require('favicons-webpack-plugin');
 
 const sourcePath = path.resolve(__dirname, 'src');
 const localesPath = path.resolve(__dirname, 'locales');
@@ -112,8 +113,6 @@ module.exports = (env) => {
         ([url, template, locale]) => page(url, template, locale),
       ),
 
-      page('/qr/','_redirect.html', null),
-
       new webpack.DefinePlugin({
         'process.env': {NODE_ENV: JSON.stringify(process.env.NODE_ENV)},
       }),
@@ -122,6 +121,13 @@ module.exports = (env) => {
         filename: 'assets/[name].[hash].css',
         chunkFilename: 'assets/[name].[hash].css',
         allChunks: true,
+      }),
+
+      new FaviconWebpackPlugin({
+        logo: './assets/favicon.png',
+        prefix: 'assets/favicon-[hash]-',
+
+        title: 'Voltz'
       }),
     ],
 
