@@ -76,7 +76,7 @@ msgid "main.faq.item2.question"
 msgstr "Как зарядить самокат?"
 
 msgid "main.faq.item2.answer"
-msgstr "В комплекте идет зарядное устройство, которое работает от обычной розетки."
+msgstr "В комплекте идет зарядное устройство, которое работает от бытовой электросети."
 
 msgid "main.faq.item3.question"
 msgstr "Что делать, если электросамокат разрядится?"
@@ -91,13 +91,13 @@ msgid "main.faq.item4.answer"
 msgstr "Нет. Это не безопасно, а так же суммарный вес райдера не должен превышать 110кг"
 
 msgid "main.faq.item5.question"
-msgstr "Вопрос"
+msgstr "Что если самокат сломался или его украли?"
 
 msgid "main.faq.item5.answer"
-msgstr "Ответ"
+msgstr "Свяжитесь с нами, мы разберемся в ситуации."
 
 msgid "main.faq.item6.question"
-msgstr "Вопрос"
+msgstr "Еще остались вопросы?"
 
 msgid "main.faq.item6.answer"
-msgstr "Ответ"
+msgstr "Напишите нам на email <a href='mailto:mail@voltz.me'>mail@voltz.me</a>"
