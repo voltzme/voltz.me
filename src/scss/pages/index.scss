@@ -132,6 +132,10 @@
     text-align: center;
     flex: 1 1 0;
 
+    &-icon {
+      max-width: 120px;
+    }
+
     & + & {
       @media (max-width: 779px) {
         margin-top: 48px;
