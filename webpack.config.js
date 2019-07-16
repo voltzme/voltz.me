@@ -13,7 +13,7 @@ const defaultLocale = 'en';
 const locales = ['ru'];
 
 const files = [
-  'index.html',
+  ['/', 'index.html'],
 ];
 
 const gt = new GetText();
@@ -109,8 +109,10 @@ module.exports = (env) => {
 
     plugins: [
       ...getPages().map(
-        ([filename, locale]) => page(filename, locale),
+        ([url, template, locale]) => page(url, template, locale),
       ),
+
+      page('/qr/','_redirect.html', null),
 
       new webpack.DefinePlugin({
         'process.env': {NODE_ENV: JSON.stringify(process.env.NODE_ENV)},
@@ -135,19 +137,28 @@ module.exports = (env) => {
 
 function getPages() {
   return files.
-    map(file => [
-      [file, null],
-      ...locales.map((locale) => [file, locale]),
+    map(pair => [
+      [...pair, null],
+      ...locales.map((locale) => [...pair, locale]),
     ]).
     flat();
 }
 
-function page(filename, locale = null) {
-  const destFilename = !locale ? filename : `${locale}/${filename}`;
+function urlToFilename(url, locale = null) {
+  const baseDir = locale ? `./${locale}` : '.';
+  url = url.startsWith('/') ? url.substr(1) : url;
 
+  if (path.extname(url) === 'html') {
+    return path.join(baseDir, url);
+  }
+
+  return path.join(baseDir, url, 'index.html');
+}
+
+function page(url, template, locale = null) {
   return new HtmlWebpackPlugin({
-    template: `./${filename}`,
-    filename: destFilename,
+    template: `./${template}`,
+    filename: urlToFilename(url, locale),
     inject: 'head',
     minify: true,
 
