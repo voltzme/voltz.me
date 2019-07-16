@@ -67,28 +67,28 @@ msgid "main.faq.title"
 msgstr "Остались вопросы?"
 
 msgid "main.faq.item1.question"
-msgstr "Вопрос"
+msgstr "Возможно ли использование в дождь?"
 
 msgid "main.faq.item1.answer"
-msgstr "Ответ"
+msgstr "Нет. Сильный дождь и лужи могут повредить самокат. Хотя мелкий дождик при избегании езды по лужам - не помеха."
 
 msgid "main.faq.item2.question"
-msgstr "Вопрос"
+msgstr "Как заряжать?"
 
 msgid "main.faq.item2.answer"
-msgstr "Ответ"
+msgstr "В комплекте идет зардное устройство, которое работает от обычной электросети."
 
 msgid "main.faq.item3.question"
-msgstr "Вопрос"
+msgstr "Где и как быстро можно подзарядиться?"
 
 msgid "main.faq.item3.answer"
-msgstr "Ответ"
+msgstr "Подзарядить самокат можно почти в любой кафешке, при этом самокат до 80% раряжается меньше часа."
 
 msgid "main.faq.item4.question"
-msgstr "Вопрос"
+msgstr "Можо ли кататься вдвоем на одном самокате?"
 
 msgid "main.faq.item4.answer"
-msgstr "Ответ"
+msgstr "Нет. Это не безопасно, а так же суммарный вес райдера не должен превышать 110кг"
 
 msgid "main.faq.item5.question"
 msgstr "Вопрос"
