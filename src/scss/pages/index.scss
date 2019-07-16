@@ -71,7 +71,7 @@
   }
 
   &-feature {
-    flex-grow: 1;
+    flex: 1 1 0;
     text-align: center;
     box-sizing: border-box;
 
@@ -124,7 +124,7 @@
   &-step {
     padding: 0;
     text-align: center;
-    flex-grow: 1;
+    flex: 1 1 0;
 
     & + & {
       @media (max-width: 779px) {
