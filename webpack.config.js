@@ -9,8 +9,8 @@ const GetTextParser = require('gettext-parser');
 const sourcePath = path.resolve(__dirname, 'src');
 const localesPath = path.resolve(__dirname, 'locales');
 
-const defaultLocale = 'en';
-const locales = ['ru'];
+const defaultLocale = 'ru';
+const locales = ['en'];
 
 const files = [
   ['/', 'index.html'],

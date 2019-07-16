@@ -13,3 +13,91 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
 "Language: ru\n"
+
+
+msgid "main.title"
+msgstr "VoltZ"
+
+msgid "main.intro.title"
+msgstr "Аренда электросамокатов в Санкт-Петербурге"
+
+msgid "main.info.title"
+msgstr "Исследуй Санкт-Петербург на электросамокате"
+
+msgid "main.info.text"
+msgstr "Самый эффективный способ передвижения по центру города"
+
+msgid "main.info.feature1.title"
+msgstr "Быстро"
+
+msgid "main.info.feature1.text"
+msgstr "Максимальная скорость до 25км/ч"
+
+msgid "main.info.feature2.title"
+msgstr "Эффективно"
+
+msgid "main.info.feature2.text"
+msgstr "Максимальная дистанция до 25км"
+
+msgid "main.info.feature3.title"
+msgstr "Удобно"
+
+msgid "main.info.feature3.text"
+msgstr "Легко сложить. Можно провезти в общественном транспорте или взять с собой в музей"
+
+msgid "main.process.title"
+msgstr "Как воспользоваться?"
+
+msgid "main.process.step1.title"
+msgstr "Заказать с доставкой в отеле"
+
+msgid "main.process.step2.title"
+msgstr "Заказать online"
+
+msgid "main.process.step3.title"
+msgstr "Взять в одной из точек проката"
+
+msgid "main.map.title"
+msgstr "Карта присутствия"
+
+msgid "main.map.text"
+msgstr "Мы осуществляем доставку в более чем 20 отелей по Санкт-Петербургу, а в некоторых присутствуем постоянно"
+
+msgid "main.faq.title"
+msgstr "Остались вопросы?"
+
+msgid "main.faq.item1.question"
+msgstr "Вопрос"
+
+msgid "main.faq.item1.answer"
+msgstr "Ответ"
+
+msgid "main.faq.item2.question"
+msgstr "Вопрос"
+
+msgid "main.faq.item2.answer"
+msgstr "Ответ"
+
+msgid "main.faq.item3.question"
+msgstr "Вопрос"
+
+msgid "main.faq.item3.answer"
+msgstr "Ответ"
+
+msgid "main.faq.item4.question"
+msgstr "Вопрос"
+
+msgid "main.faq.item4.answer"
+msgstr "Ответ"
+
+msgid "main.faq.item5.question"
+msgstr "Вопрос"
+
+msgid "main.faq.item5.answer"
+msgstr "Ответ"
+
+msgid "main.faq.item6.question"
+msgstr "Вопрос"
+
+msgid "main.faq.item6.answer"
+msgstr "Ответ"
