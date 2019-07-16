@@ -101,3 +101,6 @@ msgstr "Еще остались вопросы?"
 
 msgid "main.faq.item6.answer"
 msgstr "Напишите нам на email <a href='mailto:mail@voltz.me'>mail@voltz.me</a>"
+
+msgid "main.action"
+msgstr "Поехали!"
