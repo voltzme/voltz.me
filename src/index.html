@@ -15,7 +15,7 @@
 <body>
 <div class="main-intro">
   <div class="container">
-    <a href="#"><img
+    <a href="/"><img
       class="main-intro-logo"
       alt="<%= trans('main.title') %>"
       src="<%= require('./assets/logo.svg') %>"
@@ -135,14 +135,19 @@
 
 <div class="main-cta">
   <div class="container">
-    <a href="#" class="btn btn-primary">Go to Voltz</a>
+    <a href="/" class="btn btn-primary">
+      <%= trans('main.action') %>
+    </a>
   </div>
 </div>
 
 <div class="footer">
   <div class="container">
     <a href="/" class="footer-logo">
-      <img src="<%= require('./assets/logo-grey.svg') %>" alt="Voltz"/>
+      <img
+        src="<%= require('./assets/logo-grey.svg') %>"
+        alt="<%= trans('main.title') %>"
+      />
     </a>
 
     <div class="footer-copyright">
