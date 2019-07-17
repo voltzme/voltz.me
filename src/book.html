@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="<%= locale %>">
+<head>
+  <meta charset="utf-8"/>
+  <title><%= trans('main.title') %></title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <link
+    rel="preload"
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap&subset=cyrillic"
+    type="text/css"
+    as="style"
+  />
+
+  <%= require('html-loader!./_include_head.html') %>
+</head>
+<body class="order">
+
+<div class="modal-wrapper visible">
+  <a href="/" class="modal-close"></a>
+
+  <div class="modal book-modal">
+    <div class="modal-header">
+      <h2>Оставить заявку</h2>
+    </div>
+
+    <div class="modal-content">
+      <div class="form">
+        <div class="form-item">
+          <label for="name" class="form-item-label">
+            Имя:
+          </label>
+
+          <input
+            id="name"
+            class="input input-lg form-item-input"
+            name="name"
+            type="text"
+            placeholder="Иван"
+            autocomplete="name"
+          />
+        </div>
+
+        <div class="form-item">
+          <label for="phone" class="form-item-label">
+            Телефон:
+          </label>
+
+          <input
+            id="phone"
+            class="input input-lg form-item-input"
+            name="phone"
+            type="tel"
+            placeholder="+7 (999) 123-456-7890"
+            autocomplete="tel"
+          />
+        </div>
+
+        <div class="form-item">
+          <button class="btn btn-primary">Отправить</button>
+          <a href="/" class="book-form-hide">Нет, спасибо</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

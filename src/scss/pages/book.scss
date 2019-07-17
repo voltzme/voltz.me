@@ -1,0 +1,26 @@
+.book-modal {
+  min-width: 300px;
+
+  .form-item:last-child {
+    margin-top: 48px;
+  }
+
+  .form-item-label {
+    text-align: left;
+  }
+
+  .form-item-input {
+    background: transparent;
+    border-bottom: 1px solid #ccc;
+  }
+}
+
+.book-form-hide {
+  display: inline-block;
+  margin-left: 20px;
+  color: #999;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

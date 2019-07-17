@@ -15,6 +15,7 @@ const locales = ['en'];
 
 const files = [
   ['/', 'index.html'],
+  ['/book/', 'book.html'],
 ];
 
 const gt = new GetText();
@@ -97,6 +98,17 @@ module.exports = (env) => {
         },
 
         {
+          test: /\.(html)$/,
+          include: path.join(__dirname, 'src/views'),
+          use: {
+            loader: 'html-loader',
+            options: {
+              interpolate: true,
+            },
+          },
+        },
+
+        {
           test: /\/assets\/(.+)$/,
           use: {
             loader: 'file-loader',
@@ -127,7 +139,7 @@ module.exports = (env) => {
         logo: './assets/favicon.png',
         prefix: 'assets/favicon-[hash]-',
 
-        title: 'Voltz'
+        title: 'Voltz',
       }),
     ],
 
