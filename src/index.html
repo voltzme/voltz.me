@@ -192,7 +192,7 @@
 
         <div class="form-item">
           <label for="name" class="form-item-label">
-            <%= trans('bookForm.nameLabel') %>
+            <%= trans('bookForm.nameLabel') %>:
           </label>
 
           <input
@@ -207,11 +207,12 @@
 
         <div class="form-item">
           <label for="phone" class="form-item-label">
-            <%= trans('bookForm.phoneLabel') %>
+            <%= trans('bookForm.phoneLabel') %>:
           </label>
 
           <input
             id="phone"
+            required
             class="input input-lg form-item-input"
             name="phone"
             type="tel"
