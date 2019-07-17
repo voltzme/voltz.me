@@ -2,6 +2,8 @@
 
 set -e
 
+rm -Rf dist/assets/*
+
 npm run build:prod -- \
     --env.outputPath=./dist
 

@@ -29,6 +29,8 @@ document.addEventListener('DOMContentLoaded', () => {
       }));
   }
 
+  video.play();
+
   document.querySelectorAll('.main-faq-item').forEach((item) => {
     const answer = item.querySelector('.main-faq-item-answer');
 
