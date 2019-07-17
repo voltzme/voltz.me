@@ -1,0 +1,30 @@
+.input {
+  width: 100%;
+  padding: 8px 2px;
+  margin-left: -2px;
+  margin-right: -2px;
+  border: 0;
+  border-bottom: 2px solid #eee;
+
+  outline: none;
+
+  font-size: 12px;
+  line-height: 16px;
+
+  transition: border-color 0.2s linear;
+
+  &:focus {
+    border-color: #217dea;
+  }
+
+  &::placeholder {
+    color: #aaa;
+    font-weight: 300;
+  }
+}
+
+.input-lg {
+  font-size: 18px;
+  line-height: 24px;
+  padding: 8px 3px;
+}

@@ -53,4 +53,54 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   document.querySelector('.main-map-map').classList.add('loaded');
+
+  const bookModal = (
+    modal(document.querySelector('#main-book-modal'), {
+      white: true,
+    })
+  );
+  document.querySelector('.main-book-form-hide').
+    addEventListener('click', (e) => {
+      e.preventDefault();
+      bookModal.close();
+    });
+
+  document.querySelectorAll('a[href="#main-book-modal"]').
+    forEach((node) => {
+      node.addEventListener('click', (e) => {
+        e.preventDefault();
+        bookModal.open();
+      });
+    });
 });
+
+function modal(modalNode, opts = {}) {
+  const overlayNode = domNode('div', {
+    class: 'modal-overlay ' + (opts.white ? 'white' : 'black'),
+  });
+
+  const wrapperNode = modalNode.closest('.modal-wrapper');
+
+  const close = () => {
+    document.body.classList.remove('fixed');
+    document.body.removeChild(overlayNode);
+    wrapperNode.classList.remove('visible');
+  };
+
+  const open = () => {
+    document.body.classList.add('fixed');
+    document.body.appendChild(overlayNode);
+
+    wrapperNode.classList.add('visible');
+  };
+
+  const closeIconNode = wrapperNode.querySelector('.modal-close');
+  if (closeIconNode) {
+    closeIconNode.addEventListener('click', (e) => {
+      e.preventDefault();
+      close();
+    });
+  }
+
+  return {open, close};
+}

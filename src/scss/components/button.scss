@@ -1,0 +1,35 @@
+
+.btn {
+  display: inline-block;
+  text-align: center;
+
+  border: 0 none;
+  font-size: 16px;
+
+  padding: 10px 20px;
+  border-radius: 6px;
+
+  -webkit-appearance: none;
+  font-weight: 600;
+  background: none;
+  cursor: pointer;
+  box-sizing: content-box;
+  text-decoration: none;
+  background: #eee;
+  color: #000;
+  white-space: nowrap;
+  vertical-align: middle;
+  outline: none;
+}
+
+.btn-lg {
+  padding: 20px 60px;
+
+  border-radius: 30px;
+  font-weight: 700;
+}
+
+.btn-primary {
+  background: #217dea;
+  color: #fff;
+}

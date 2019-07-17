@@ -130,6 +130,12 @@
         <h3 class="main-process-step-title"><%= trans('main.process.step3.title') %></h3>
       </li>
     </ol>
+
+    <div class="main-process-action">
+      <a href="#main-book-modal" class="btn btn-lg btn-primary">
+        <%= trans('main.action') %>
+      </a>
+    </div>
   </div>
 </div>
 
@@ -164,7 +170,7 @@
 
 <div class="main-cta">
   <div class="container">
-    <a href="/" class="btn btn-primary">
+    <a href="#main-book-modal" class="btn btn-lg btn-primary">
       <%= trans('main.action') %>
     </a>
   </div>
@@ -184,5 +190,55 @@
     </div>
   </div>
 </div>
+
+<div class="modal-wrapper">
+  <div class="modal-close"></div>
+
+  <div id="main-book-modal" class="modal main-book-modal">
+    <div class="modal-header">
+      <h2>Оставить заявку</h2>
+    </div>
+
+    <div class="modal-content">
+      <div class="form main-book-form">
+        <div class="form-item">
+          <label for="name" class="form-item-label">
+            Имя:
+          </label>
+
+          <input
+            id="name"
+            class="input input-lg form-item-input"
+            name="name"
+            type="text"
+            placeholder="Иван"
+            autocomplete="name"
+          />
+        </div>
+
+        <div class="form-item">
+          <label for="phone" class="form-item-label">
+            Телефон:
+          </label>
+
+          <input
+            id="phone"
+            class="input input-lg form-item-input"
+            name="phone"
+            type="tel"
+            placeholder="+7 (999) 123-456-7890"
+            autocomplete="tel"
+          />
+        </div>
+
+        <div class="form-item">
+          <button class="btn btn-primary">Отправить</button>
+          <a href="#" class="main-book-form-hide">Нет, спасибо</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>

@@ -121,7 +121,7 @@
 
 
 .main-process {
-  padding: 60px 0 100px;
+  padding: 60px 0 80px;
   background: #f1f6f9;
 
   &-title {
@@ -159,6 +159,11 @@
         margin-top: 48px;
       }
     }
+  }
+
+  &-action {
+    text-align: center;
+    margin-top: 80px;
   }
 }
 
@@ -308,4 +313,36 @@
 .main-cta {
   padding: 0 0 80px;
   text-align: center;
+}
+
+
+.main-book-modal {
+  background: transparent;
+  //color: #fff;
+  //text-align: center;
+  min-width: 300px;
+
+  .form-item:last-child {
+    margin-top: 48px;
+  }
+
+  .form-item-label {
+    text-align: left;
+  }
+
+  .form-item-input {
+    //color: #fff;
+    background: transparent;
+    border-bottom: 1px solid #ccc;
+  }
+}
+
+.main-book-form-hide {
+  display: inline-block;
+  margin-left: 20px;
+  color: #999;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
