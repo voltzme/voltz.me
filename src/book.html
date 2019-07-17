@@ -2,7 +2,7 @@
 <html lang="<%= locale %>">
 <head>
   <meta charset="utf-8"/>
-  <title><%= trans('main.title') %></title>
+  <title><%= trans('book.title') %> | Voltz</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
@@ -18,18 +18,18 @@
 <body class="order">
 
 <div class="modal-wrapper visible">
-  <a href="/" class="modal-close"></a>
-
   <div class="modal book-modal">
     <div class="modal-header">
-      <h2>Оставить заявку</h2>
+      <h2><%= trans('bookForm.title') %></h2>
     </div>
 
     <div class="modal-content">
-      <div class="form">
+      <form method="post" action="https://1form.cc/to/0NK4EJZWYGEDF7Z0/" class="form">
+        <input type="hidden" name="_redirect" value="https://voltz.me/book/success/"/>
+
         <div class="form-item">
           <label for="name" class="form-item-label">
-            Имя:
+            <%= trans('bookForm.nameLabel') %>
           </label>
 
           <input
@@ -37,14 +37,14 @@
             class="input input-lg form-item-input"
             name="name"
             type="text"
-            placeholder="Иван"
+            placeholder="<%= trans('bookForm.namePlaceholder') %>"
             autocomplete="name"
           />
         </div>
 
         <div class="form-item">
           <label for="phone" class="form-item-label">
-            Телефон:
+            <%= trans('bookForm.phoneLabel') %>
           </label>
 
           <input
@@ -52,16 +52,16 @@
             class="input input-lg form-item-input"
             name="phone"
             type="tel"
-            placeholder="+7 (999) 123-456-7890"
+            placeholder="<%= trans('bookForm.phonePlaceholder') %>"
             autocomplete="tel"
           />
         </div>
 
         <div class="form-item">
-          <button class="btn btn-primary">Отправить</button>
-          <a href="/" class="book-form-hide">Нет, спасибо</a>
+          <button class="btn btn-primary"><%= trans('bookForm.submit') %></button>
+          <a href="/" class="book-form-hide"><%= trans('bookForm.cancel') %></a>
         </div>
-      </div>
+      </form>
     </div>
   </div>
 </div>

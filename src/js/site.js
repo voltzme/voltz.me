@@ -46,17 +46,17 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('.main-map-map').classList.add('loaded');
 
     const bookModal = (
-      modal(document.querySelector('#main-book-modal'), {
+      modal(document.querySelector('#book-modal'), {
         white: true,
       })
     );
-    document.querySelector('.main-book-form-hide').
+    document.querySelector('.book-form-hide').
       addEventListener('click', (e) => {
         e.preventDefault();
         bookModal.close();
       });
 
-    document.querySelectorAll('a[href="#main-book-modal"]').
+    document.querySelectorAll('a[href="#book-modal"]').
       forEach((node) => {
         node.addEventListener('click', (e) => {
           e.preventDefault();

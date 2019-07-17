@@ -104,3 +104,37 @@ msgstr "Напишите нам на email <a href='mailto:mail@voltz.me'>mail@v
 
 msgid "main.action"
 msgstr "Заказать"
+
+msgid "book.title"
+msgstr "Оформить заказ"
+
+msgid "bookForm.title"
+msgstr "Оформить заказ"
+
+
+msgid "bookForm.nameLabel"
+msgstr "Имя"
+
+msgid "bookForm.namePlaceholder"
+msgstr "Виктор"
+
+msgid "bookForm.phoneLabel"
+msgstr "Телефон"
+
+msgid "bookForm.phonePlaceholder"
+msgstr "+7 (911) 123-456-7890"
+
+msgid "bookForm.submit"
+msgstr "Отправить"
+
+msgid "bookForm.cancel"
+msgstr "Нет, спасибо"
+
+msgid "bookForm.success"
+msgstr "Ваша заявка успешно отправлена"
+
+msgid "bookForm.successMessage"
+msgstr "В ближайшее время мы свяжемся с вами и уточним все детали"
+
+msgid "backToMain"
+msgstr "На главную"

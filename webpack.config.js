@@ -16,6 +16,7 @@ const locales = ['en'];
 const files = [
   ['/', 'index.html'],
   ['/book/', 'book.html'],
+  ['/book/success/', 'book_success.html'],
 ];
 
 const gt = new GetText();

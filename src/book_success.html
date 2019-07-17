@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="<%= locale %>">
+<head>
+  <meta charset="utf-8"/>
+  <title><%= trans('book.title') %> | Voltz</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <link
+    rel="preload"
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap&subset=cyrillic"
+    type="text/css"
+    as="style"
+  />
+
+  <%= require('html-loader!./_include_head.html') %>
+</head>
+<body class="order">
+
+<div class="modal-wrapper visible">
+  <div class="modal book-modal">
+    <div class="modal-content">
+      <h2><%= trans('bookForm.success') %></h2>
+      <p><%= trans('bookForm.successMessage') %></p>
+      <a href="/"><%= trans('backToMain') %></a>
+    </div>
+  </div>
+</div>
+</body>
+</html>
