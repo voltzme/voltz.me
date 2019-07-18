@@ -103,7 +103,7 @@
 
 
   &-info {
-    padding: 60px 0;
+    padding: 60px 0 84px;
 
     &-features {
       display: flex;
@@ -146,7 +146,7 @@
 
 
   &-prices {
-    padding: 0 0 60px 0;
+    padding: 0 0 84px 0;
 
     &-title {
       font-size: 28px;
@@ -260,14 +260,13 @@
   }
 
   &-form {
-    padding: 60px 0;
+    padding: 84px 0;
     background: #efefef;
 
     .input {
       background: transparent;
       border-bottom: 1px solid #ccc;
     }
-
 
     &-title {
       text-transform: uppercase;
@@ -278,8 +277,6 @@
     &-form {
       max-width: 400px;
       margin: 0 auto;
-
-
     }
   }
 }
