@@ -44,6 +44,12 @@ a {
     justify-content: space-between;
   }
 
+  &.no-border {
+    .container {
+      border-top: none;
+    }
+  }
+
   &-logo {
     opacity: 0.5;
     display: block;

@@ -64,6 +64,17 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       });
   }
+
+  if (document.body.classList.contains('book2')) {
+    new SmoothScroll('.book2-intro-btn', {
+      speed: 500,
+      updateURL: false,
+    });
+    new SmoothScroll('.book2-intro-btn-mobile', {
+      speed: 500,
+      updateURL: false,
+    });
+  }
 });
 
 function modal(modalNode, opts = {}) {

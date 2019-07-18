@@ -1,7 +1,21 @@
-
 .container {
   margin: 0 auto;
   padding: 0 24px;
-  max-width: 1020px;
-}
 
+  @media (max-width: 480px) {
+    max-width: 360px;
+    width: auto;
+  }
+
+  @media (min-width: 481px) and (max-width: 780px) {
+    width: 420px;
+  }
+
+  @media (min-width: 781px) and (max-width: 980px) {
+    width: 680px;
+  }
+
+  @media (min-width: 981px) {
+    width: 920px;
+  }
+}

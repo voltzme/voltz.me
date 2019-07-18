@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="<%= locale %>">
+<head>
+  <meta charset="utf-8"/>
+  <title><%= trans('book.title') %> | Voltz</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <link
+    rel="preload"
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap&subset=cyrillic"
+    type="text/css"
+    as="style"
+  />
+
+  <%= require('html-loader!./_include_head.html') %>
+</head>
+<body class="book2">
+
+<div class="book2-intro">
+
+  <div class="book2-intro-overlay"></div>
+  <div class="container">
+    <div class="book2-intro-logo"></div>
+
+    <div class="book2-intro-container">
+      <h1 class="book2-intro-title">Аренда электросамокатов в Санкт-Петербурге</h1>
+      <p class="book2-intro-text">
+        Закажи доставку электросамокатов или
+        забери самостоятельно в одной из точек проката
+      </p>
+
+      <a class="btn book2-intro-btn" href="#form">
+        Заказать
+      </a>
+
+      <a class="book2-intro-btn-mobile" href="#form">
+        <div class="book2-intro-btn-mobile-text">Заказать</div>
+
+        <img
+          class="book2-intro-btn-mobile-icon"
+          src="<%= require('./assets/book2-intro-icon-more.svg') %>"
+          alt="<%= trans('main.intro.more') %>"
+        />
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="book2-info">
+  <div class="container">
+    <div class="book2-info-features">
+      <div class="book2-info-feature">
+        <img
+          class="book2-info-feature-icon"
+          src="<%= require('./assets/main/feature1.svg') %>"
+          alt="<%= trans('main.info.feature1.title') %>"
+        />
+        <h3 class="book2-info-feature-title"><%= trans('main.info.feature1.title') %></h3>
+        <div class="book2-info-feature-text"><%= trans('main.info.feature1.text') %></div>
+      </div>
+      <div class="book2-info-feature">
+        <img
+          class="book2-info-feature-icon"
+          src="<%= require('./assets/main/feature2.svg') %>"
+          alt="<%= trans('main.info.feature2.title') %>"
+        />
+        <h3 class="book2-info-feature-title"><%= trans('main.info.feature2.title') %></h3>
+        <div class="book2-info-feature-text"><%= trans('main.info.feature2.text') %></div>
+      </div>
+      <div class="book2-info-feature">
+        <img
+          class="book2-info-feature-icon"
+          src="<%= require('./assets/main/feature3.svg') %>"
+          alt="<%= trans('main.info.feature3.title') %>"
+        />
+        <h3 class="book2-info-feature-title"><%= trans('main.info.feature3.title') %></h3>
+        <div class="book2-info-feature-text"><%= trans('main.info.feature3.text') %></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="book2-prices">
+  <div class="container">
+    <h2 class="book2-prices-title">Тарифы</h2>
+
+    <table class="book2-prices-table">
+      <tr class="book2-prices-row">
+        <th>
+          <div class="book2-prices-row-header">
+            На час
+          </div>
+        </th>
+        <td>
+          <span class="book2-prices-row-value">
+            300 RUB
+          </span>
+          <span class="book2-prices-row-value-description">первый час</span>
+        </td>
+        <td>
+          <span class="book2-prices-row-extra-value">+ 100 RUB</span>
+          <span class="book2-prices-row-extra-value-description">каждый последующий</span>
+        </td>
+      </tr>
+
+      <tr class="book2-prices-row">
+        <th>
+          <div class="book2-prices-row-header">
+            На сутки
+          </div>
+        </th>
+        <td>
+          <span class="book2-prices-row-value">
+            1000 RUB
+          </span>
+          <span class="book2-prices-row-value-description">первый день</span>
+        </td>
+        <td>
+          <span class="book2-prices-row-extra-value">+ 800 RUB</span>
+          <span class="book2-prices-row-extra-value-description">каждый последующий</span>
+        </td>
+      </tr>
+
+
+      <tr class="book2-prices-row">
+        <th>
+          <span class="book2-prices-row-header">
+            12 часов
+          </span>
+          <span class="book2-prices-row-header-description">
+            катайся с утра до вечера, или наоборот
+          </span>
+        </th>
+        <td>
+          <span class="book2-prices-row-value">800 RUB</span>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<div class="book2-form" id="form">
+  <div class="container">
+    <form
+
+      class="form book2-form-form"
+      method="post"
+      action="https://1form.cc/to/0NK4EJZWYGEDF7Z0/"
+    >
+      <h2 class="book2-form-title">Оформить заявку</h2>
+
+      <input type="hidden" name="_redirect" value="https://voltz.me/book/success/"/>
+
+      <div class="form-item">
+        <label for="name" class="form-item-label">
+          <%= trans('bookForm.nameLabel') %>
+        </label>
+
+        <input
+          id="name"
+          class="input input-lg form-item-input"
+          name="name"
+          type="text"
+          placeholder="<%= trans('bookForm.namePlaceholder') %>"
+          autocomplete="name"
+        />
+      </div>
+
+      <div class="form-item">
+        <label for="phone" class="form-item-label">
+          <%= trans('bookForm.phoneLabel') %>
+        </label>
+
+        <input
+          id="phone"
+          required
+          class="input input-lg form-item-input"
+          name="phone"
+          type="tel"
+          placeholder="<%= trans('bookForm.phonePlaceholder') %>"
+          autocomplete="tel"
+        />
+      </div>
+
+      <div class="form-item">
+        <button class="btn btn-primary"><%= trans('bookForm.submit') %></button>
+        <a href="/" class="book-form-hide"><%= trans('bookForm.cancel') %></a>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div class="footer no-border">
+  <div class="container">
+    <a href="/" class="footer-logo">
+      <img
+        src="<%= require('./assets/logo-grey.svg') %>"
+        alt="<%= trans('main.title') %>"
+      />
+    </a>
+
+    <div class="footer-copyright">
+      © Voltz, 2019
+    </div>
+  </div>
+</div>
+</body>
+</html>
