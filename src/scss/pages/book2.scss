@@ -146,12 +146,11 @@
 
 
   &-prices {
-    padding: 60px 0;
+    padding: 0 0 60px 0;
 
     &-title {
       font-size: 28px;
       font-weight: 300;
-      text-align: center;
 
       @media (max-width: 780px) {
         text-align: center;
@@ -168,12 +167,17 @@
         vertical-align: center;
       }
 
+      th {
+        width: 50%;
+      }
+
       @media (max-width: 780px) {
         tr, td, th {
           display: block;
           text-align: center;
           max-width: 240px;
           margin: 0 auto;
+          width: 100%;
         }
 
         th {
