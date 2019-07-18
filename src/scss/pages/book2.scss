@@ -1,6 +1,7 @@
 .book2 {
   &-intro {
     height: 100vh;
+    min-height: 600px;
     background: url('../assets/book2_intro.jpg') no-repeat;
     background-size: cover;
     color: #fff;
