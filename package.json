@@ -4,7 +4,7 @@
   "description": "",
   "private": true,
   "scripts": {
-    "dev": "webpack-dev-server --env.debug --env.devServer",
+    "dev": "webpack-dev-server --env.debug --env.devServer --env.updateLocalesPOT",
     "build": "webpack --bail",
     "build:prod": "webpack --bail -p --env.mode=production"
   },

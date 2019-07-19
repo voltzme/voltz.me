@@ -1,10 +1,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2019-07-15 17:50+0300\n"
-"PO-Revision-Date: 2019-07-15 17:51+0300\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2019-07-19 18:21+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -12,14 +13,15 @@ msgstr ""
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
-"Language: ru\n"
-
 
 msgid "main.title"
 msgstr "Voltz - Аренда электросамокатов в Санкт-Петербурге"
 
 msgid "main.intro.title"
 msgstr "Аренда электросамокатов в Санкт-Петербурге"
+
+msgid "main.intro.more"
+msgstr "Читать далее"
 
 msgid "main.info.title"
 msgstr "Исследуй Санкт-Петербург на электросамокате"
@@ -43,7 +45,9 @@ msgid "main.info.feature3.title"
 msgstr "Удобно"
 
 msgid "main.info.feature3.text"
-msgstr "Легко сложить. Можно провезти в общественном транспорте или взять с собой в музей"
+msgstr ""
+"Легко сложить. Можно провезти в общественном транспорте или взять с собой в "
+"музей"
 
 msgid "main.process.title"
 msgstr "Как воспользоваться?"
@@ -57,11 +61,16 @@ msgstr "Заказать онлайн"
 msgid "main.process.step3.title"
 msgstr "Взять в одной из точек проката"
 
+msgid "main.action"
+msgstr "Заказать"
+
 msgid "main.map.title"
 msgstr "Карта присутствия"
 
 msgid "main.map.text"
-msgstr "Мы осуществляем доставку в более чем 30 отелей по Санкт-Петербургу, а в некоторых присутствуем постоянно"
+msgstr ""
+"Мы осуществляем доставку в более чем 30 отелей по Санкт-Петербургу, а в "
+"некоторых присутствуем постоянно"
 
 msgid "main.faq.title"
 msgstr "Остались вопросы?"
@@ -70,25 +79,33 @@ msgid "main.faq.item1.question"
 msgstr "Возможно ли кататься на самокате в дождь?"
 
 msgid "main.faq.item1.answer"
-msgstr "Нет. Сильный дождь и лужи могут повредить самокат, хотя мелкий дождик при избегании езды по лужам - не помеха."
+msgstr ""
+"Нет. Сильный дождь и лужи могут повредить самокат, хотя мелкий дождик при "
+"избегании езды по лужам - не помеха."
 
 msgid "main.faq.item2.question"
 msgstr "Как зарядить самокат?"
 
 msgid "main.faq.item2.answer"
-msgstr "В комплекте идет зарядное устройство, которое работает от бытовой электросети."
+msgstr ""
+"В комплекте идет зарядное устройство, которое работает от бытовой "
+"электросети."
 
 msgid "main.faq.item3.question"
 msgstr "Что делать, если электросамокат разрядится?"
 
 msgid "main.faq.item3.answer"
-msgstr "Подзарядить самокат можно почти в любом кафе. При этом до 80% самокат заряжается меньше часа."
+msgstr ""
+"Подзарядить самокат можно почти в любом кафе. При этом до 80% самокат "
+"заряжается меньше часа."
 
 msgid "main.faq.item4.question"
 msgstr "Можно ли кататься вдвоем на одном самокате?"
 
 msgid "main.faq.item4.answer"
-msgstr "Нет. Это не безопасно, а так же суммарный вес райдера не должен превышать 110кг"
+msgstr ""
+"Нет. Это не безопасно, а так же суммарный вес райдера не должен превышать "
+"110кг"
 
 msgid "main.faq.item5.question"
 msgstr "Что если самокат сломался или его украли?"
@@ -102,15 +119,8 @@ msgstr "Еще остались вопросы?"
 msgid "main.faq.item6.answer"
 msgstr "Напишите нам на email <a href='mailto:mail@voltz.me'>mail@voltz.me</a>"
 
-msgid "main.action"
-msgstr "Заказать"
-
-msgid "book.title"
-msgstr "Оформить заказ"
-
 msgid "bookForm.title"
 msgstr "Оформить заказ"
-
 
 msgid "bookForm.nameLabel"
 msgstr "Имя"
@@ -129,6 +139,91 @@ msgstr "Отправить"
 
 msgid "bookForm.cancel"
 msgstr "Нет, спасибо"
+
+msgid "book.title"
+msgstr "Оформить заказ"
+
+msgid "book2.title"
+msgstr "Аренда электросамокатов в Санкт-Петербурге"
+
+msgid "book2.intro.title"
+msgstr "Аренда электросамокатов в Санкт-Петербурге"
+
+msgid "book2.intro.text"
+msgstr ""
+"Закажи доставку электросамокатов или забери самостоятельно в одной из точек "
+"проката"
+
+msgid "book2.intro.book"
+msgstr "Заказать"
+
+msgid "book2.info.feature1.title"
+msgstr "Быстро"
+
+msgid "book2.info.feature1.text"
+msgstr "Максимальная скорость до 25км/ч"
+
+msgid "book2.info.feature2.title"
+msgstr "Эффективно"
+
+msgid "book2.info.feature2.text"
+msgstr "Максимальная дистанция до 25км"
+
+msgid "book2.info.feature3.title"
+msgstr "Удобно"
+
+msgid "book2.info.feature3.text"
+msgstr ""
+"Легко сложить. Можно провезти в общественном транспорте или взять с собой в "
+"музей"
+
+msgid "book2.prices.title"
+msgstr "Цены на аренду"
+
+msgid "book2.prices.per_hour"
+msgstr "На час"
+
+msgid "RUB"
+msgstr "РУБ"
+
+msgid "price.first_hour"
+msgstr "первый час"
+
+msgid "price.next_hours"
+msgstr "каждый последующий"
+
+msgid "price.per_day"
+msgstr "На день"
+
+msgid "price.first_day"
+msgstr "первый день"
+
+msgid "price.next_days"
+msgstr "каждый последующий"
+
+msgid "price.per_12_hours"
+msgstr "12 часов"
+
+msgid "price.per_12_hours_description"
+msgstr "катайся с утра до вечера, или наоборот"
+
+msgid "book2.form.title"
+msgstr "Оформить заявку"
+
+msgid "book2.form.name"
+msgstr "Имя"
+
+msgid "book2.form.namePlaceholder"
+msgstr "Виктор"
+
+msgid "book2.form.phone"
+msgstr "Телефон"
+
+msgid "book2.form.phonePlaceholder"
+msgstr "+7 (911) 123-456-7890"
+
+msgid "book2.form.submit"
+msgstr "Отправить"
 
 msgid "bookForm.success"
 msgstr "Ваша заявка успешно отправлена"

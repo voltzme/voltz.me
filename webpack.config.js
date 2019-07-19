@@ -24,6 +24,8 @@ const gt = new GetText();
 addLocale(defaultLocale);
 locales.forEach((locale) => addLocale(locale));
 
+
+
 module.exports = (env) => {
   if (!env || (!env.outputPath && !env.devServer)) {
     throw new Error(
@@ -32,6 +34,59 @@ module.exports = (env) => {
   }
 
   const outputPath = path.resolve(__dirname, env.outputPath || './tmp/ui');
+
+  let updatePotMsgId;
+  if (env && env.updateLocalesPOT) {
+    const potFile = fs.openSync(
+      path.resolve(__dirname, 'locales', 'messages.pot'),
+      'w',
+    );
+    const usedLabels = [];
+
+    updatePotMsgId = (msgId, msgIdPlural = undefined) => {
+      if (usedLabels.includes(msgId)) {
+        return;
+      }
+
+      fs.writeSync(potFile, `msgid "${msgId}"\n`);
+      if (msgIdPlural) {
+        fs.writeSync(potFile, `msgid_plural "${msgIdPlural}"\n`);
+      }
+      fs.writeSync(potFile, 'msgstr ""\n');
+      fs.writeSync(potFile, '\n');
+
+      usedLabels.push(msgId);
+    };
+  }
+
+  function page(url, template, locale = null) {
+    return new HtmlWebpackPlugin({
+      template: `./${template}`,
+      filename: urlToFilename(url, locale),
+      inject: 'head',
+      minify: true,
+
+      templateParameters: {
+        locale: locale || defaultLocale,
+
+        trans: (msgId) => {
+          updatePotMsgId && updatePotMsgId(msgId);
+
+          gt.setLocale(locale || defaultLocale);
+          return gt.gettext(msgId);
+        },
+
+        transPlural: (msgId, msgIdPlural, count) => {
+          updatePotMsgId && updatePotMsgId(msgId, msgIdPlural);
+
+          gt.setLocale(locale || defaultLocale);
+          return gt.ngettext(msgId, msgIdPlural, count);
+        },
+      },
+
+    });
+
+  }
 
   return {
     context: sourcePath,
@@ -173,31 +228,6 @@ function urlToFilename(url, locale = null) {
   }
 
   return path.join(baseDir, url, 'index.html');
-}
-
-function page(url, template, locale = null) {
-  return new HtmlWebpackPlugin({
-    template: `./${template}`,
-    filename: urlToFilename(url, locale),
-    inject: 'head',
-    minify: true,
-
-    templateParameters: {
-      locale: locale || defaultLocale,
-
-      trans: (msgId) => {
-        gt.setLocale(locale || defaultLocale);
-        return gt.gettext(msgId);
-      },
-
-      transPlural: (msgId, msgIdPlural, count) => {
-        gt.setLocale(locale || defaultLocale);
-        return gt.ngettext(msgId, msgIdPlural, count);
-      },
-    },
-
-  });
-
 }
 
 function addLocale(locale) {
