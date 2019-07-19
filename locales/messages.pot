@@ -91,6 +91,9 @@ msgstr ""
 msgid "main.faq.item6.answer"
 msgstr ""
 
+msgid "privacyPolicy"
+msgstr ""
+
 msgid "bookForm.title"
 msgstr ""
 

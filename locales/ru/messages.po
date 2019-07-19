@@ -233,3 +233,6 @@ msgstr "В ближайшее время мы свяжемся с вами и у
 
 msgid "backToMain"
 msgstr "На главную"
+
+msgid "privacyPolicy"
+msgstr "Политика конфиденциальности"

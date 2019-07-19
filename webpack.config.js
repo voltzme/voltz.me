@@ -25,8 +25,6 @@ const gt = new GetText();
 addLocale(defaultLocale);
 locales.forEach((locale) => addLocale(locale));
 
-
-
 module.exports = (env) => {
   if (!env || (!env.outputPath && !env.devServer)) {
     throw new Error(
@@ -70,6 +68,22 @@ module.exports = (env) => {
       templateParameters: {
         isDefaultLocale: !locale,
         locale: locale || defaultLocale,
+
+        url: (url) => {
+          if (url.startsWith('/')) {
+            return locale ? `/${locale}${url}` : url;
+          }
+
+          return url;
+        },
+
+        absoluteUrl: (url) => {
+          if (url.startsWith('/')) {
+            return 'https://voltz.me' + (locale ? `/${locale}${url}` : url);
+          }
+
+          return url;
+        },
 
         trans: (msgId) => {
           updatePotMsgId && updatePotMsgId(msgId);

@@ -1,5 +1,5 @@
 {
-  "name": "1form-website",
+  "name": "voltz.me",
   "version": "1.0.0",
   "description": "",
   "private": true,
@@ -37,10 +37,9 @@
   "dependencies": {
     "ejs": "^2.6.1",
     "gettext-parser": "^4.0.0",
-    "highlight.js": "^9.15.6",
+    "js-cookie": "^2.2.0",
+    "lodash": ">=4.17.13",
     "node-gettext": "^2.0.0",
-    "smooth-scroll": "^16.1.0",
-    "tippy.js": "^4.2.0",
-    "lodash": ">=4.17.13"
+    "smooth-scroll": "^16.1.0"
   }
 }

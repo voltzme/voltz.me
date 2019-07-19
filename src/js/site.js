@@ -1,4 +1,5 @@
 import SmoothScroll from 'smooth-scroll';
+import {determineLocale} from './i18n';
 
 document.addEventListener('DOMContentLoaded', () => {
   if (document.body.classList.contains('main')) {
@@ -76,13 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // redirect
-  if (!window.location.pathname.startsWith('/en')) {
-    if (!['ru', 'ru-RU'].includes(window.navigator.language)) {
-      window.location = window.location.origin + '/en' +
-        window.location.pathname;
-    }
-  }
+  determineLocale();
 
   document.querySelectorAll('.mailto').forEach((node) => {
     let prefix = node.querySelector('.mailto-prefix');
