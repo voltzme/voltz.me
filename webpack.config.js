@@ -67,6 +67,7 @@ module.exports = (env) => {
       minify: true,
 
       templateParameters: {
+        isDefaultLocale: !locale,
         locale: locale || defaultLocale,
 
         trans: (msgId) => {

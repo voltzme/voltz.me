@@ -1,6 +1,12 @@
 import SmoothScroll from 'smooth-scroll';
 
 document.addEventListener('DOMContentLoaded', () => {
+  if (!window.location.pathname.startsWith('/en')) {
+    if (!['ru', 'ru-RU'].includes(window.navigator.language)) {
+      window.location = window.location.origin + '/en' + window.location.pathname;
+    }
+  }
+
   if (document.body.classList.contains('main')) {
     new SmoothScroll('.main-intro-more', {
       speed: 500,
