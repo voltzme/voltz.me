@@ -32,6 +32,13 @@ a {
   text-decoration: none;
 }
 
+.mailto {
+  &-prefix {
+    position: absolute;
+    left: -1000px;
+  }
+}
+
 .footer {
 
   .container {

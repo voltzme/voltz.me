@@ -15,6 +15,7 @@ const locales = ['en'];
 
 const files = [
   ['/', 'index.html'],
+  ['/privacy/', 'privacy.html'],
   ['/book/', 'book.html'],
   ['/book2/', 'book2.html'],
   ['/book/success/', 'book_success.html'],

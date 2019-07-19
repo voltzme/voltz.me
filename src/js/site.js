@@ -1,12 +1,6 @@
 import SmoothScroll from 'smooth-scroll';
 
 document.addEventListener('DOMContentLoaded', () => {
-  if (!window.location.pathname.startsWith('/en')) {
-    if (!['ru', 'ru-RU'].includes(window.navigator.language)) {
-      window.location = window.location.origin + '/en' + window.location.pathname;
-    }
-  }
-
   if (document.body.classList.contains('main')) {
     new SmoothScroll('.main-intro-more', {
       speed: 500,
@@ -81,6 +75,30 @@ document.addEventListener('DOMContentLoaded', () => {
       updateURL: false,
     });
   }
+
+  // redirect
+  if (!window.location.pathname.startsWith('/en')) {
+    if (!['ru', 'ru-RU'].includes(window.navigator.language)) {
+      window.location = window.location.origin + '/en' +
+        window.location.pathname;
+    }
+  }
+
+  document.querySelectorAll('.mailto').forEach((node) => {
+    let prefix = node.querySelector('.mailto-prefix');
+
+    let email = node.innerText.replace('\n', '').replace(' ', '');
+    if (prefix) {
+      prefix = prefix.innerText.replace('\n', '');
+
+      email = email.substr(prefix.length);
+    }
+
+    node.parentNode.replaceChild(
+      domNode('a', {href: 'mailto:' + email}, email),
+      node,
+    );
+  });
 });
 
 function modal(modalNode, opts = {}) {
@@ -114,12 +132,16 @@ function modal(modalNode, opts = {}) {
   return {open, close};
 }
 
-function domNode(tagName, attrs = {}) {
+function domNode(tagName, attrs = {}, innerHtml = undefined) {
   const el = document.createElement(tagName);
 
   Object.entries(attrs).map(([attr, value]) => {
     el.setAttribute(attr, value);
   });
+
+  if (innerHtml !== undefined) {
+    el.innerHTML = innerHtml;
+  }
 
   return el;
 }
