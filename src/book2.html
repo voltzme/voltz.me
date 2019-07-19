@@ -187,6 +187,10 @@
       <div class="form-item">
         <button class="btn btn-primary"><%= trans('book2.form.submit') %></button>
       </div>
+
+      <p class="book2-form-privacy-note">
+        <%= sprintf(trans('book2.form.privacyPolicyNote'), { href: url('/privacy/') }) %>
+      </p>
     </form>
   </div>
 </div>

@@ -62,6 +62,10 @@
           <button class="btn btn-primary"><%= trans('bookForm.submit') %></button>
           <a href="/" class="book-form-hide"><%= trans('bookForm.cancel') %></a>
         </div>
+
+        <p class="book-form-privacy-note">
+          <%= sprintf(trans('bookForm.privacyPolicyNote'), { href: url('/privacy/') }) %>
+        </p>
       </form>
     </div>
   </div>

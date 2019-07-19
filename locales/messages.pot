@@ -115,6 +115,9 @@ msgstr ""
 msgid "bookForm.cancel"
 msgstr ""
 
+msgid "bookForm.privacyPolicyNote"
+msgstr ""
+
 msgid "book.title"
 msgstr ""
 
@@ -194,6 +197,9 @@ msgid "book2.form.phonePlaceholder"
 msgstr ""
 
 msgid "book2.form.submit"
+msgstr ""
+
+msgid "book2.form.privacyPolicyNote"
 msgstr ""
 
 msgid "bookForm.success"

@@ -1,5 +1,7 @@
 const fs = require('fs');
 const path = require('path');
+const sprintf = require('sprintf-js').sprintf;
+
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const webpack = require('webpack');
@@ -84,6 +86,8 @@ module.exports = (env) => {
 
           return url;
         },
+
+        sprintf: sprintf,
 
         trans: (msgId) => {
           updatePotMsgId && updatePotMsgId(msgId);

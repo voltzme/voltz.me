@@ -140,6 +140,9 @@ msgstr "Отправить"
 msgid "bookForm.cancel"
 msgstr "Нет, спасибо"
 
+msgid "bookForm.privacyPolicyNote"
+msgstr "Отправляя форму вы даете согласие на обработку персональных данных в соответствии с <a href='%(href)s'>политикой конфиденциальности</a>."
+
 msgid "book.title"
 msgstr "Оформить заказ"
 
@@ -224,6 +227,9 @@ msgstr "+7 (911) 123-456-7890"
 
 msgid "book2.form.submit"
 msgstr "Отправить"
+
+msgid "book2.form.privacyPolicyNote"
+msgstr "Отправляя форму вы даете согласие на обработку персональных данных в соответствии с <a href='%(href)s'>политикой конфиденциальности</a>."
 
 msgid "bookForm.success"
 msgstr "Ваша заявка успешно отправлена"
