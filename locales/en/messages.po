@@ -1,14 +1,235 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2019-07-15 14:13+0300\n"
-"PO-Revision-Date: 2019-07-15 14:13+0300\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2019-07-22 00:40+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2.3\n"
+"X-Generator: Poedit 2.0.6\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Language: en\n"
+
+msgid "main.title"
+msgstr "Voltz - Rent electric scooter in Saint Petersburg"
+
+msgid "main.intro.title"
+msgstr "Electric scooter rental in Saint Petersburg"
+
+msgid "main.intro.more"
+msgstr "Continue reading"
+
+msgid "main.info.title"
+msgstr "Explore Saint Petersburg on e-scooter"
+
+msgid "main.info.text"
+msgstr "The most efficient way to explore city center"
+
+msgid "main.info.feature1.title"
+msgstr "Fast"
+
+msgid "main.info.feature1.text"
+msgstr "Max speed up to 25km/h"
+
+msgid "main.info.feature2.title"
+msgstr "Efficient"
+
+msgid "main.info.feature2.text"
+msgstr "Max distance up to 25km/h"
+
+msgid "main.info.feature3.title"
+msgstr "lightweight"
+
+msgid "main.info.feature3.text"
+msgstr "Easy to carry"
+
+msgid "main.process.title"
+msgstr "How to get?"
+
+msgid "main.process.step1.title"
+msgstr "Order delivery to a hotel"
+
+msgid "main.process.step2.title"
+msgstr "Book online"
+
+msgid "main.process.step3.title"
+msgstr "Take in one of offline pickup points"
+
+msgid "main.action"
+msgstr "Book"
+
+msgid "main.map.title"
+msgstr "Where do we operate"
+
+msgid "main.map.text"
+msgstr ""
+"We offer delivery in more then 300 hotels in Saint Petersburg and in some of "
+"then we have pickup points"
+
+msgid "main.faq.title"
+msgstr "Still have questions?"
+
+msgid "main.faq.item1.question"
+msgstr "Can I ride in the rain?"
+
+msgid "main.faq.item1.answer"
+msgstr "No. It can damage electric parts of a scooter"
+
+msgid "main.faq.item2.question"
+msgstr "How can I charge an escooter?"
+
+msgid "main.faq.item2.answer"
+msgstr "Charger is Included you can use it with regular socket"
+
+msgid "main.faq.item3.question"
+msgstr "What should I do when power indicator shows low energy"
+
+msgid "main.faq.item3.answer"
+msgstr ""
+"You can charge escooter at any cafe. It takes less then one hour to charge "
+"battery up to 80%"
+
+msgid "main.faq.item4.question"
+msgstr "How many people can ride on one escooter at the same time?"
+
+msgid "main.faq.item4.answer"
+msgstr "Only one rider and total weight must be less then 110kg"
+
+msgid "main.faq.item5.question"
+msgstr "What if the scooter was stolen or broken?"
+
+msgid "main.faq.item5.answer"
+msgstr "Contact us, we will investigate and decide how to deal with it."
+
+msgid "main.faq.item6.question"
+msgstr "Any other questions?"
+
+msgid "main.faq.item6.answer"
+msgstr "Contact us by email <a href='mailto:mail@voltz.me'>mail@voltz.me</a>"
+
+msgid "privacyPolicy"
+msgstr "Privacy policy"
+
+msgid "bookForm.title"
+msgstr "Place an order"
+
+msgid "bookForm.nameLabel"
+msgstr "Name"
+
+msgid "bookForm.namePlaceholder"
+msgstr "Onni"
+
+msgid "bookForm.phoneLabel"
+msgstr "Phone"
+
+msgid "bookForm.phonePlaceholder"
+msgstr "+7 (911) 123-456-7890"
+
+msgid "bookForm.submit"
+msgstr "Submit"
+
+msgid "bookForm.cancel"
+msgstr "No, thanks"
+
+msgid "bookForm.privacyPolicyNote"
+msgstr ""
+"By submitting this form, you agree that the personal data in this form will "
+"be processed according to privacy policy"
+
+msgid "book.title"
+msgstr "Book electric scooter"
+
+msgid "book2.title"
+msgstr "Rent electric scooter in Saint Petersburg"
+
+msgid "book2.intro.title"
+msgstr "Rent electric scooter in Saint Petersburg"
+
+msgid "book2.intro.text"
+msgstr "Order delivery to a hotel or take it in one of offline pickup points"
+
+msgid "book2.intro.book"
+msgstr "Book"
+
+msgid "book2.info.feature1.title"
+msgstr "Fast"
+
+msgid "book2.info.feature1.text"
+msgstr "Max speed up to 25km/h"
+
+msgid "book2.info.feature2.title"
+msgstr "Efficient"
+
+msgid "book2.info.feature2.text"
+msgstr "Max distance up to 25km/h"
+
+msgid "book2.info.feature3.title"
+msgstr "lightweight"
+
+msgid "book2.info.feature3.text"
+msgstr "Easy to carry"
+
+msgid "book2.prices.title"
+msgstr "Pricing"
+
+msgid "book2.prices.per_hour"
+msgstr "per hour"
+
+msgid "RUB"
+msgstr "₽"
+
+msgid "price.first_hour"
+msgstr "first hour"
+
+msgid "price.next_hours"
+msgstr "next hours"
+
+msgid "price.per_day"
+msgstr "per day"
+
+msgid "price.first_day"
+msgstr "first day"
+
+msgid "price.next_days"
+msgstr "next days"
+
+msgid "price.per_12_hours"
+msgstr "12 hours"
+
+msgid "price.per_12_hours_description"
+msgstr "form dawn till dusk of vice versa"
+
+msgid "book2.form.title"
+msgstr "Place an order"
+
+msgid "book2.form.name"
+msgstr "Name"
+
+msgid "book2.form.namePlaceholder"
+msgstr "Onni"
+
+msgid "book2.form.phone"
+msgstr "Phone"
+
+msgid "book2.form.phonePlaceholder"
+msgstr "+7 (911) 123-456-7890"
+
+msgid "book2.form.submit"
+msgstr "Submit"
+
+msgid "book2.form.privacyPolicyNote"
+msgstr ""
+"By submitting this form, you agree that the personal data in this form will "
+"be processed according to privacy policy"
+
+msgid "bookForm.success"
+msgstr "You request successfully submitted"
+
+msgid "bookForm.successMessage"
+msgstr "We will contact you soon"
+
+msgid "backToMain"
+msgstr "Go to main"
