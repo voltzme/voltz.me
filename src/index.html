@@ -31,7 +31,7 @@
   </div>
 
   <div class="container">
-    <a href="/"><img
+    <a href="<%= url('/') %>"><img
       class="main-intro-logo"
       alt="<%= trans('main.title') %>"
       src="<%= require('./assets/logo.svg') %>"
@@ -165,7 +165,7 @@
 
 <div class="footer">
   <div class="container">
-    <a href="/" class="footer-logo">
+    <a href="<%= url('/') %>" class="footer-logo">
       <img
         src="<%= require('./assets/logo-grey.svg') %>"
         alt="<%= trans('main.title') %>"
@@ -224,7 +224,7 @@
 
         <div class="form-item">
           <button class="btn btn-primary"><%= trans('bookForm.submit') %></button>
-          <a href="/" class="book-form-hide"><%= trans('bookForm.cancel') %></a>
+          <a href="<%= url('/') %>" class="book-form-hide"><%= trans('bookForm.cancel') %></a>
         </div>
 
         <p class="book-form-privacy-note">
