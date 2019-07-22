@@ -33,3 +33,39 @@
   background: #217dea;
   color: #fff;
 }
+
+.btn-vk {
+  width: 100%;
+  padding: 14px 20px;
+  color: #fff;
+  background: #4680C2 url('../assets/vk.svg') no-repeat left center;
+  background-size: auto 84px;
+
+  font-weight: 300;
+
+  & > span {
+    font-weight: 600;
+  }
+}
+
+.btn-fb {
+  width: 100%;
+  padding: 14px 20px;
+  color: #fff;
+  background: #3A559F url('../assets/fb.svg') no-repeat 22px center;
+  background-size: auto 28px;
+  font-weight: 300;
+
+  & > span {
+    font-weight: 600;
+  }
+}
+
+.btn-whatsapp {
+  width: 100%;
+  padding: 14px 20px;
+  color: #fff;
+  background: #25d366 url('../assets/wa.svg') no-repeat 10px center;
+  background-size: auto 60px;
+  font-weight: 400;
+}

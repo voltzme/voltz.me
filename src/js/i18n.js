@@ -33,7 +33,10 @@ export function determineLocale() {
     (lng) => ['ru', 'ru-RU'].includes(lng)) ? 'ru' : 'en';
   if (urlLocale !== browserLocale) {
     redirectToLocale(browserLocale);
+    return;
   }
+
+  return true;
 }
 
 function redirectToLocale(locale) {

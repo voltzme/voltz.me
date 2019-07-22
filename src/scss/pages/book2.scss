@@ -276,8 +276,24 @@
     }
 
     &-form {
-      max-width: 400px;
+      max-width: 360px;
       margin: 0 auto;
+    }
+
+    &-or {
+      text-align: center;
+    }
+
+    &-submit {
+      width: 100%;
+      padding: 14px 20px;
+      box-sizing: border-box;
+    }
+
+    &-buttons {
+      .btn + .btn {
+        margin-top: 12px;
+      }
     }
 
     &-privacy-note {

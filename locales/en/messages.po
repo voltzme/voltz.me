@@ -44,7 +44,7 @@ msgid "main.info.feature3.title"
 msgstr "Easy to carry"
 
 msgid "main.info.feature3.text"
-msgstr "Lightweight and foldable. Can be taken in a public transport or museum."
+msgstr "Lightweight and foldable. Can be taken in a public transport or a museum."
 
 msgid "main.process.title"
 msgstr "How can I get it?"
@@ -66,8 +66,8 @@ msgstr "Where do we operate?"
 
 msgid "main.map.text"
 msgstr ""
-"We offer delivery in more then 300 hotels in Saint Petersburg and in some of "
-"then we have pickup points"
+"We offer delivery in more then 300 hotels in Saint-Petersburg and in some of "
+"then we have pickup points."
 
 msgid "main.faq.title"
 msgstr "Still have questions?"
@@ -120,13 +120,13 @@ msgid "bookForm.nameLabel"
 msgstr "Name"
 
 msgid "bookForm.namePlaceholder"
-msgstr "John"
+msgstr "Enter your name"
 
 msgid "bookForm.phoneLabel"
 msgstr "Phone"
 
 msgid "bookForm.phonePlaceholder"
-msgstr "+7 (911) 123-456-7890"
+msgstr "Your phone number"
 
 msgid "bookForm.submit"
 msgstr "Submit"
@@ -209,16 +209,19 @@ msgid "book2.form.name"
 msgstr "Name"
 
 msgid "book2.form.namePlaceholder"
-msgstr "John"
+msgstr "Enter your name"
 
 msgid "book2.form.phone"
 msgstr "Phone"
 
 msgid "book2.form.phonePlaceholder"
-msgstr "+7 (911) 123-456-7890"
+msgstr "Enter your phone number"
 
 msgid "book2.form.submit"
 msgstr "Submit"
+
+msgid "book2.form.or"
+msgstr "or"
 
 msgid "book2.form.privacyPolicyNote"
 msgstr ""
@@ -233,3 +236,4 @@ msgstr "We will contact you soon."
 
 msgid "backToMain"
 msgstr "Go to main page"
+

@@ -15,7 +15,7 @@
 
   <%= require('html-loader!./_include_head.html') %>
 </head>
-<body class="book2">
+<body class="book2" data-page="main">
 
 <div class="book2-intro">
   <div class="book2-intro-overlay"></div>
@@ -185,7 +185,17 @@
       </div>
 
       <div class="form-item">
-        <button class="btn btn-primary"><%= trans('book2.form.submit') %></button>
+        <button class="btn btn-primary book2-form-submit"><%= trans('book2.form.submit') %></button>
+      </div>
+
+      <div class="form-item book2-form-or">
+        <%= trans('book2.form.or') %>
+      </div>
+
+      <div class="form-item book2-form-buttons">
+        <a target="_blank" href="https://vk.me/voltzme" class="btn btn-vk book2-form-submit">vk.me/<span>voltzme</span></a>
+        <a target="_blank" href="https://m.me/voltzapp" class="btn btn-fb book2-form-submit">m.me/<span>voltzapp</span></a>
+        <a target="_blank" href="https://m.me/voltzapp" class="btn btn-whatsapp book2-form-submit">WhatsApp</a>
       </div>
 
       <p class="book2-form-privacy-note">

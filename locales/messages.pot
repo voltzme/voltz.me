@@ -199,6 +199,9 @@ msgstr ""
 msgid "book2.form.submit"
 msgstr ""
 
+msgid "book2.form.or"
+msgstr ""
+
 msgid "book2.form.privacyPolicyNote"
 msgstr ""
 

@@ -126,13 +126,13 @@ msgid "bookForm.nameLabel"
 msgstr "Имя"
 
 msgid "bookForm.namePlaceholder"
-msgstr "Виктор"
+msgstr "Введите имя"
 
 msgid "bookForm.phoneLabel"
 msgstr "Телефон"
 
 msgid "bookForm.phonePlaceholder"
-msgstr "+7 (911) 123-456-7890"
+msgstr "Введите номер телефона"
 
 msgid "bookForm.submit"
 msgstr "Отправить"
@@ -217,16 +217,19 @@ msgid "book2.form.name"
 msgstr "Имя"
 
 msgid "book2.form.namePlaceholder"
-msgstr "Виктор"
+msgstr "Введите имя"
 
 msgid "book2.form.phone"
 msgstr "Телефон"
 
 msgid "book2.form.phonePlaceholder"
-msgstr "+7 (911) 123-456-7890"
+msgstr "Введите номер телефона"
 
 msgid "book2.form.submit"
 msgstr "Отправить"
+
+msgid "book2.form.or"
+msgstr "или"
 
 msgid "book2.form.privacyPolicyNote"
 msgstr "Отправляя форму вы даете согласие на обработку персональных данных в соответствии с <a href='%(href)s'>политикой конфиденциальности</a>."
