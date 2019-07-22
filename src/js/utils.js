@@ -65,3 +65,15 @@ export function onPageLoad(pageName, callback) {
 export function logEvent(eventName, eventParams = undefined) {
   amplitude.getInstance().logEvent(eventName, eventParams);
 }
+
+export function addOnClickHandler(selector, callback) {
+  document.querySelectorAll(selector).forEach((node) => {
+    node.addEventListener('click', callback);
+  });
+}
+
+export function addOnClickLogEvent(selector, event, eventParams = undefined) {
+  addOnClickHandler(selector, () => {
+    logEvent(event, eventParams);
+  });
+}
