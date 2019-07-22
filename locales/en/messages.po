@@ -14,16 +14,16 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgid "main.title"
-msgstr "Voltz - Rent electric scooter in Saint Petersburg"
+msgstr "Voltz - Rent an electric scooter in Saint-Petersburg"
 
 msgid "main.intro.title"
-msgstr "Electric scooter rental in Saint Petersburg"
+msgstr "Electric scooter rental in Saint-Petersburg"
 
 msgid "main.intro.more"
-msgstr "Continue reading"
+msgstr "More"
 
 msgid "main.info.title"
-msgstr "Explore Saint Petersburg on e-scooter"
+msgstr "Explore Saint-Petersburg on an electric scooter"
 
 msgid "main.info.text"
 msgstr "The most efficient way to explore city center"
@@ -32,25 +32,25 @@ msgid "main.info.feature1.title"
 msgstr "Fast"
 
 msgid "main.info.feature1.text"
-msgstr "Max speed up to 25km/h"
+msgstr "Speed up to 25 km/h on straight roads"
 
 msgid "main.info.feature2.title"
 msgstr "Efficient"
 
 msgid "main.info.feature2.text"
-msgstr "Max distance up to 25km/h"
+msgstr "Ride up to 25 km with only one full battery"
 
 msgid "main.info.feature3.title"
-msgstr "lightweight"
-
-msgid "main.info.feature3.text"
 msgstr "Easy to carry"
 
+msgid "main.info.feature3.text"
+msgstr "Lightweight and foldable. Can be taken in a public transport or museum."
+
 msgid "main.process.title"
-msgstr "How to get?"
+msgstr "How can I get it?"
 
 msgid "main.process.step1.title"
-msgstr "Order delivery to a hotel"
+msgstr "Book with delivery to hotel"
 
 msgid "main.process.step2.title"
 msgstr "Book online"
@@ -62,7 +62,7 @@ msgid "main.action"
 msgstr "Book"
 
 msgid "main.map.title"
-msgstr "Where do we operate"
+msgstr "Where do we operate?"
 
 msgid "main.map.text"
 msgstr ""
@@ -79,7 +79,7 @@ msgid "main.faq.item1.answer"
 msgstr "No. It can damage electric parts of a scooter"
 
 msgid "main.faq.item2.question"
-msgstr "How can I charge an escooter?"
+msgstr "How can I charge an electric scooter?"
 
 msgid "main.faq.item2.answer"
 msgstr "Charger is Included you can use it with regular socket"
@@ -89,11 +89,11 @@ msgstr "What should I do when power indicator shows low energy"
 
 msgid "main.faq.item3.answer"
 msgstr ""
-"You can charge escooter at any cafe. It takes less then one hour to charge "
-"battery up to 80%"
+"You can charge electric scooter at any cafe. It takes less then one hour to charge "
+"battery up to 70%"
 
 msgid "main.faq.item4.question"
-msgstr "How many people can ride on one escooter at the same time?"
+msgstr "How many people can ride on one electric scooter at the same time?"
 
 msgid "main.faq.item4.answer"
 msgstr "Only one rider and total weight must be less then 110kg"
@@ -120,7 +120,7 @@ msgid "bookForm.nameLabel"
 msgstr "Name"
 
 msgid "bookForm.namePlaceholder"
-msgstr "Onni"
+msgstr "John"
 
 msgid "bookForm.phoneLabel"
 msgstr "Phone"
@@ -137,79 +137,79 @@ msgstr "No, thanks"
 msgid "bookForm.privacyPolicyNote"
 msgstr ""
 "By submitting this form, you agree that the personal data in this form will "
-"be processed according to privacy policy"
+"be processed according to privacy policy."
 
 msgid "book.title"
-msgstr "Book electric scooter"
+msgstr "Book an electric scooter"
 
 msgid "book2.title"
-msgstr "Rent electric scooter in Saint Petersburg"
+msgstr "Rent an electric scooter in Saint-Petersburg"
 
 msgid "book2.intro.title"
-msgstr "Rent electric scooter in Saint Petersburg"
+msgstr "Rent an electric scooter in Saint-Petersburg"
 
 msgid "book2.intro.text"
-msgstr "Order delivery to a hotel or take it in one of offline pickup points"
+msgstr "Order delivery to a hotel or take it in<br/> one of offline pickup points"
 
 msgid "book2.intro.book"
-msgstr "Book"
+msgstr "Book now"
 
 msgid "book2.info.feature1.title"
 msgstr "Fast"
 
 msgid "book2.info.feature1.text"
-msgstr "Max speed up to 25km/h"
+msgstr "Speed up to 25 km/h on straight roads"
 
 msgid "book2.info.feature2.title"
 msgstr "Efficient"
 
 msgid "book2.info.feature2.text"
-msgstr "Max distance up to 25km/h"
+msgstr "Ride up to 25 km with only one full battery"
 
 msgid "book2.info.feature3.title"
-msgstr "lightweight"
+msgstr "Easy to carry"
 
 msgid "book2.info.feature3.text"
-msgstr "Easy to carry"
+msgstr "Lightweight and foldable.<br/> Can be taken in a public transport or a museum."
 
 msgid "book2.prices.title"
 msgstr "Pricing"
 
 msgid "book2.prices.per_hour"
-msgstr "per hour"
+msgstr "Per hour"
 
 msgid "RUB"
-msgstr "₽"
+msgstr "RUB"
 
 msgid "price.first_hour"
 msgstr "first hour"
 
 msgid "price.next_hours"
-msgstr "next hours"
+msgstr "every next hour"
 
 msgid "price.per_day"
-msgstr "per day"
+msgstr "Per day"
 
 msgid "price.first_day"
 msgstr "first day"
 
 msgid "price.next_days"
-msgstr "next days"
+msgstr "every next day"
 
 msgid "price.per_12_hours"
 msgstr "12 hours"
 
 msgid "price.per_12_hours_description"
-msgstr "form dawn till dusk of vice versa"
+msgstr "from dawn till dusk or vice versa"
 
 msgid "book2.form.title"
-msgstr "Place an order"
+msgstr "Book now"
 
 msgid "book2.form.name"
 msgstr "Name"
 
 msgid "book2.form.namePlaceholder"
-msgstr "Onni"
+msgstr "John"
 
 msgid "book2.form.phone"
 msgstr "Phone"
@@ -223,13 +223,13 @@ msgstr "Submit"
 msgid "book2.form.privacyPolicyNote"
 msgstr ""
 "By submitting this form, you agree that the personal data in this form will "
-"be processed according to privacy policy"
+"be processed according to privacy policy."
 
 msgid "bookForm.success"
-msgstr "You request successfully submitted"
+msgstr "You request successfully submitted."
 
 msgid "bookForm.successMessage"
-msgstr "We will contact you soon"
+msgstr "We will contact you soon."
 
 msgid "backToMain"
-msgstr "Go to main"
+msgstr "Go to main page"
