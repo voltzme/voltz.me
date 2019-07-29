@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const sprintf = require('sprintf-js').sprintf;
+const CopyPlugin = require('copy-webpack-plugin');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -218,6 +219,13 @@ module.exports = (env) => {
 
         title: 'Voltz',
       }),
+
+      new CopyPlugin([
+        {
+          from: path.resolve(__dirname, 'public'),
+          to: '.'
+        },
+      ]),
     ],
 
     optimization: {
