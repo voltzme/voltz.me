@@ -2,14 +2,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2019-08-06 14:26+0300\n"
+"PO-Revision-Date: 2019-08-29 13:16+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.6\n"
+"X-Generator: Poedit 2.2.3\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
@@ -119,6 +119,9 @@ msgstr "Еще остались вопросы?"
 msgid "main.faq.item6.answer"
 msgstr "Напишите нам на email <a href='mailto:mail@voltz.me'>mail@voltz.me</a>"
 
+msgid "privacyPolicy"
+msgstr "Политика конфиденциальности"
+
 msgid "bookForm.title"
 msgstr "Оформить заказ"
 
@@ -141,21 +144,22 @@ msgid "bookForm.cancel"
 msgstr "Нет, спасибо"
 
 msgid "bookForm.privacyPolicyNote"
-msgstr "Отправляя форму вы даете согласие на обработку персональных данных в соответствии с <a href='%(href)s'>политикой конфиденциальности</a>."
+msgstr ""
+"Отправляя форму вы даете согласие на обработку персональных данных в "
+"соответствии с <a href='%(href)s'>политикой конфиденциальности</a>."
 
 msgid "book.title"
 msgstr "Оформить заказ"
 
 msgid "book2.title"
-msgstr "Аренда электросамокатов в Санкт-Петербурге"
+msgstr "Прокат электросамокатов в Санкт-Петербурге"
 
 msgid "book2.intro.title"
-msgstr "Аренда электросамокатов в Санкт-Петербурге"
+msgstr "Прокат электросамокатов в Санкт-Петербурге"
 
 msgid "book2.intro.text"
 msgstr ""
-"Закажи доставку электросамокатов или забери самостоятельно в одной из точек "
-"проката"
+"Новые Ninebot by Segway Kickscooter ES2, много точек доставки и отличные цены :)"
 
 msgid "book2.intro.book"
 msgstr "Заказать"
@@ -179,6 +183,58 @@ msgid "book2.info.feature3.text"
 msgstr ""
 "Легко сложить. Можно провезти в общественном транспорте или взять с собой в "
 "музей"
+
+msgid "book2Page.placesTitle"
+msgstr "Карта присутствия"
+
+msgid "book2Page.placesPlace1Title"
+msgstr "м. Чернышевская"
+
+msgid "book2Page.placesPlace1Address"
+msgstr "ул. Белинского, 11"
+
+msgid "book2Page.placesPlace2Title"
+msgstr "м. Горьковская"
+
+msgid "book2Page.placesPlace2Address"
+msgstr "ул. Малая Посадская, 15"
+
+msgid "book2Page.placesPlace3Title"
+msgstr "м. Василеостровская"
+
+msgid "book2Page.placesPlace3Address"
+msgstr "6-ая линия В.О., 27"
+
+msgid "book2Page.placesMapPlace1Title"
+msgstr "Чернышевская"
+
+msgid "book2Page.placesMapPlace1Address"
+msgstr "ул. Белинского, 11"
+
+msgid "book2Page.placesMapPlace1Description"
+msgstr ""
+"Мы находимся на территории Red House Hostel, снаружи есть заметный красный "
+"стенд с названием отеля."
+
+msgid "book2Page.placesMapPlace2Title"
+msgstr "Петроградская"
+
+msgid "book2Page.placesMapPlace2Address"
+msgstr "Малая Посадская, 15"
+
+msgid "book2Page.placesMapPlace2Description"
+msgstr "Мы находимся на территории Like Home Hostel"
+
+msgid "book2Page.placesMapPlace3Title"
+msgstr "Василеостровская"
+
+msgid "book2Page.placesMapPlace3Address"
+msgstr "6-ая линия В.О., 27"
+
+msgid "book2Page.placesMapPlace3Description"
+msgstr ""
+"Мы находимся на территории Online Hostel (первая дверь сразу после арки, на "
+"домофоне набрать 11)"
 
 msgid "book2.prices.title"
 msgstr "Цены на аренду"
@@ -229,10 +285,12 @@ msgid "book2.form.submit"
 msgstr "Отправить"
 
 msgid "book2.form.or"
-msgstr "или"
+msgstr "или напишите нам"
 
 msgid "book2.form.privacyPolicyNote"
-msgstr "Отправляя форму вы даете согласие на обработку персональных данных в соответствии с <a href='%(href)s'>политикой конфиденциальности</a>."
+msgstr ""
+"Отправляя форму вы даете согласие на обработку персональных данных в "
+"соответствии с <a href='%(href)s'>политикой конфиденциальности</a>."
 
 msgid "bookForm.success"
 msgstr "Ваша заявка успешно отправлена"
@@ -243,5 +301,211 @@ msgstr "В ближайшее время мы свяжемся с вами и у
 msgid "backToMain"
 msgstr "На главную"
 
-msgid "privacyPolicy"
-msgstr "Политика конфиденциальности"
+#| msgid "book2.title"
+msgid "home2.title"
+msgstr ""
+
+msgid "topbar.home"
+msgstr ""
+
+msgid "topbar.tours"
+msgstr ""
+
+msgid "topbar.about"
+msgstr ""
+
+msgid "home2Page.headerTitle"
+msgstr "Прокат электросамокатов в Санкт-Петербурге"
+
+msgid "home2Page.headerMoreBtn"
+msgstr "Подробнее"
+
+msgid "home2Page.aboutTitlePrefix"
+msgstr "только новые"
+
+msgid "home2Page.aboutTitle"
+msgstr "Ninebot by Segway KickScooter ES2"
+
+msgid "home2Page.aboutText"
+msgstr ""
+"Это один из самых популярных и качественных электросамокатов в мире от "
+"известного производителя"
+
+msgid "home2Page.maxSpeedFeatureDescription"
+msgstr "макс. скорость"
+
+msgid "home2Page.maxSpeedFeature"
+msgstr "25 км/ч"
+
+msgid "home2Page.efficientFeatureDescription"
+msgstr "без подзарядки"
+
+msgid "home2Page.efficientFeature"
+msgstr "до 25 км"
+
+#| msgid "home2Page.headerTitle"
+msgid "home2Page.placesTitle"
+msgstr ""
+
+#| msgid "home2Page.headerTitle"
+msgid "home2Page.placesPlace1Title"
+msgstr ""
+
+#| msgid "home2Page.headerTitle"
+msgid "home2Page.placesPlace1Address"
+msgstr ""
+
+#| msgid "home2Page.headerTitle"
+msgid "home2Page.placesPlace2Title"
+msgstr ""
+
+#| msgid "home2Page.headerTitle"
+msgid "home2Page.placesPlace2Address"
+msgstr ""
+
+#| msgid "home2Page.headerTitle"
+msgid "home2Page.placesPlace3Title"
+msgstr ""
+
+#| msgid "home2Page.headerTitle"
+msgid "home2Page.placesPlace3Address"
+msgstr ""
+
+#| msgid "home2Page.headerTitle"
+msgid "home2Page.placesMapPlace1Title"
+msgstr ""
+
+msgid "home2Page.placesMapPlace1Address"
+msgstr ""
+
+#| msgid "home2Page.maxSpeedFeatureDescription"
+msgid "home2Page.placesMapPlace1Description"
+msgstr ""
+
+#| msgid "home2Page.headerTitle"
+msgid "home2Page.placesMapPlace2Title"
+msgstr ""
+
+msgid "home2Page.placesMapPlace2Address"
+msgstr ""
+
+#| msgid "home2Page.maxSpeedFeatureDescription"
+msgid "home2Page.placesMapPlace2Description"
+msgstr ""
+
+#| msgid "home2Page.headerTitle"
+msgid "home2Page.placesMapPlace3Title"
+msgstr ""
+
+msgid "home2Page.placesMapPlace3Address"
+msgstr ""
+
+#| msgid "home2Page.maxSpeedFeatureDescription"
+msgid "home2Page.placesMapPlace3Description"
+msgstr ""
+
+#| msgid "home2Page.headerTitle"
+msgid "home2Page.prices"
+msgstr ""
+
+msgid "price.perHour"
+msgstr "Почасовая"
+
+#, fuzzy
+#| msgid "price.first_hour"
+msgid "price.firstHour"
+msgstr "первые 3 часа"
+
+#, fuzzy
+#| msgid "price.next_hours"
+msgid "price.nextHours"
+msgstr "каждый последующий"
+
+msgid "price.perDay"
+msgstr "Посуточная"
+
+#, fuzzy
+#| msgid "price.first_day"
+msgid "price.firstDay"
+msgstr "первый день"
+
+#, fuzzy
+#| msgid "price.next_days"
+msgid "price.nextDays"
+msgstr "каждый последующий"
+
+#, fuzzy
+#| msgid "price.per_12_hours"
+msgid "price.per12Hours"
+msgstr "12 часов"
+
+msgid "price.per12HoursDescription"
+msgstr "с утра до вечера, или наоборот"
+
+#, fuzzy
+#| msgid "main.faq.item1.question"
+msgid "home2Page.faqItem1Question"
+msgstr "Возможно ли кататься на самокате в дождь?"
+
+#, fuzzy
+#| msgid "main.faq.item1.answer"
+msgid "home2Page.faqItem1Answer"
+msgstr ""
+"Нет. Сильный дождь и лужи могут повредить самокат, хотя мелкий дождик при "
+"избегании езды по лужам - не помеха."
+
+#, fuzzy
+#| msgid "main.faq.item2.question"
+msgid "home2Page.faqItem2Question"
+msgstr "Как зарядить самокат?"
+
+#, fuzzy
+#| msgid "main.faq.item2.answer"
+msgid "home2Page.faqItem2Answer"
+msgstr ""
+"В комплекте идет зарядное устройство, которое работает от бытовой "
+"электросети."
+
+#, fuzzy
+#| msgid "main.faq.item3.question"
+msgid "home2Page.faqItem3Question"
+msgstr "Что делать, если электросамокат разрядится?"
+
+#, fuzzy
+#| msgid "main.faq.item3.answer"
+msgid "home2Page.faqItem3Answer"
+msgstr ""
+"Подзарядить самокат можно почти в любом кафе. При этом до 80% самокат "
+"заряжается меньше часа."
+
+#, fuzzy
+#| msgid "main.faq.item4.question"
+msgid "home2Page.faqItem4Question"
+msgstr "Можно ли кататься вдвоем на одном самокате?"
+
+#, fuzzy
+#| msgid "main.faq.item4.answer"
+msgid "home2Page.faqItem4Answer"
+msgstr ""
+"Нет. Это не безопасно, а так же суммарный вес райдера не должен превышать "
+"110кг"
+
+#, fuzzy
+#| msgid "main.faq.item5.question"
+msgid "home2Page.faqItem5Question"
+msgstr "Что если самокат сломался или его украли?"
+
+#, fuzzy
+#| msgid "main.faq.item5.answer"
+msgid "home2Page.faqItem5Answer"
+msgstr "Свяжитесь с нами, мы разберемся в ситуации."
+
+#, fuzzy
+#| msgid "main.faq.item6.question"
+msgid "home2Page.faqItem6Question"
+msgstr "Еще остались вопросы?"
+
+#, fuzzy
+#| msgid "main.faq.item6.answer"
+msgid "home2Page.faqItem6Answer"
+msgstr "Напишите нам на email <a href='mailto:mail@voltz.me'>mail@voltz.me</a>"

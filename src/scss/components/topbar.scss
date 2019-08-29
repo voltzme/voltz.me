@@ -1,0 +1,25 @@
+.topbar {
+  &, & > .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  padding: 14px;
+  border-bottom: 1px solid #ccc;
+
+  &-menu {
+    display: flex;
+  }
+
+  &-menu-item {
+    color: #111;
+
+    & + & {
+      margin-left: 20px;
+    }
+
+    &.--active {
+      font-weight: bold;
+    }
+  }
+}

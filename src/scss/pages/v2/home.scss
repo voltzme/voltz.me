@@ -1,0 +1,280 @@
+.home2 {
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: #111;
+}
+
+.home2-header {
+  padding: 100px 0 120px;
+
+  & > .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &-title {
+    font-weight: normal;
+    font-size: 36px;
+    text-align: center;
+    width: 460px;
+  }
+
+  &-more-btn {
+    margin: 24px auto;
+    display: inline-block;
+  }
+}
+
+.home2-about {
+  margin: 0 0 120px;
+
+  & > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-main {
+    flex-grow: 1;
+    min-width: 50%;
+    max-width: 50%;
+  }
+
+  &-title {
+    &-prefix {
+      display: block;
+      font-weight: normal;
+      text-transform: uppercase;
+      font-size: 18px;
+    }
+
+    font-size: 36px;
+  }
+
+  &-text {
+    font-size: 14px;
+    font-weight: normal;
+    color: #777;
+    margin-top: 12px;
+    margin-bottom: 32px;
+    max-width: 400px;
+  }
+
+  &-features {
+    display: flex;
+  }
+
+  &-feature {
+    & + & {
+      margin-left: 60px;
+    }
+
+    min-width: 174px;
+    max-width: 174px;
+
+    display: flex;
+    align-items: center;
+
+    &-image {
+      width: 64px;
+    }
+
+    &-text {
+      margin-left: 12px;
+    }
+
+    &-title {
+      margin: 0;
+      font-size: 20px;
+      font-weight: normal;
+    }
+
+    &-description {
+      margin: 0;
+      font-size: 12px;
+      font-weight: normal;
+    }
+
+  }
+
+  &-cover {
+    img {
+      max-width: 420px;
+      width: 100%;
+    }
+
+  }
+}
+
+.home2-places {
+  padding-bottom: 100px;
+
+  & > .container {
+    display: flex;
+  }
+
+  &-title {
+    font-size: 18px;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+  }
+
+  &-list {
+    min-width: 260px;
+  }
+
+  &-place {
+    padding-left: 60px;
+    background: url('../assets/v2/place.svg') no-repeat 4px 2px;
+    background-size: auto 100%;
+
+    & + & {
+      margin-top: 24px;
+    }
+
+    h3 {
+      margin: 0;
+      font-weight: normal;
+    }
+
+    address {
+      margin: 4px 0 0;
+      font-weight: 300;
+      font-style: normal;
+    }
+  }
+
+  &-map {
+    width: 100%;
+    margin-left: 60px;
+  }
+
+  &-map-map {
+    height: 400px;
+    width: 100%;
+  }
+
+  &-map-place {
+    display: none;
+  }
+}
+
+
+.home2-prices {
+  padding: 0 0 84px 0;
+
+  &-title {
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    @media (max-width: 780px) {
+      text-align: center;
+    }
+  }
+
+  &-table {
+    width: 100%;
+    margin-top: 48px;
+
+    td, th {
+      font-weight: normal;
+      text-align: left;
+      vertical-align: center;
+    }
+
+    th {
+      width: 50%;
+    }
+
+    @media (max-width: 780px) {
+      tr, td, th {
+        display: block;
+        text-align: center;
+        max-width: 240px;
+        margin: 0 auto;
+        width: 100%;
+      }
+
+      th {
+        margin-bottom: 16px;
+      }
+
+      td {
+        margin-bottom: 12px;
+      }
+
+      tr {
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #eee;
+
+        &:last-child {
+          margin-bottom: 0;
+          padding-bottom: 0;
+          border-bottom: none;
+        }
+      }
+    }
+  }
+
+  &-row {
+    & + & td, & + & th {
+      padding-top: 28px;
+
+      @media (max-width: 780px) {
+        padding-top: 0;
+      }
+    }
+
+    td {
+      padding-left: 40px;
+      min-width: 200px;
+
+      @media (max-width: 780px) {
+        padding-left: 0;
+      }
+    }
+  }
+
+  &-row-header {
+    font-size: 20px;
+    display: block;
+    @media (max-width: 780px) {
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+  }
+
+  &-row-header-description {
+    display: block;
+    font-weight: 300;
+  }
+
+  &-row-value {
+    display: block;
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  &-row-value-description {
+    display: block;
+    font-weight: 300;
+  }
+
+  &-row-extra-value {
+    display: block;
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  &-row-extra-value-description {
+    display: block;
+    font-weight: 300;
+  }
+}
+
+

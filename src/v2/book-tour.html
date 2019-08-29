@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="<%= locale %>">
+<head>
+  <meta charset="utf-8"/>
+  <title><%= trans('bookTourPage.title') %></title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <link
+    rel="preload"
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap&subset=cyrillic"
+    type="text/css"
+    as="style"
+  />
+
+  <%= require('html-loader!./_head.html') %>
+</head>
+<body class="book-tour">
+
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-logo">
+      <img src="/logo.svg" alt="voltz.me"/>
+    </div>
+    <div class="topbar-menu">
+      <nav>
+        <a class="topbar-menu-item --active" href="/"><%= trans('topbar.home') %></a>
+        <a class="topbar-menu-item" href="/"><%= trans('topbar.tours') %></a>
+        <a class="topbar-menu-item" href="/"><%= trans('topbar.about') %></a>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<div class="book-header">
+  <div class="container">
+    <h1 class="home2-header-title"><%= trans('home2Page.headerTitle') %></h1>
+
+    <a href="#main" class="home2-header-more-btn btn btn-primary">
+      <%= trans('home2Page.headerMoreBtn') %>
+    </a>
+  </div>
+</div>
+
+<div class="home2-about">
+  <div class="container">
+    <div class="home2-about-main">
+      <h2 class="home2-about-title">
+        <span class="home2-about-title-prefix"><%= trans('home2Page.aboutTitlePrefix') %></span>
+        <span><%= trans('home2Page.aboutTitle') %></span>
+      </h2>
+      <p class="home2-about-text">
+        <%= trans('home2Page.aboutText') %>
+      </p>
+    </div>
+
+    <div class="home2-about-features">
+      <div class="home2-about-feature">
+        <img
+          class="home2-about-feature-image"
+          src="<%= require('../assets/v2/speed.svg') %>"
+          alt="<%= trans('home2Page.maxSpeedFeatureDescription') %>"
+        />
+        <h3 class="home2-about-feature-title"><%= trans('home2Page.maxSpeedFeature') %></h3>
+        <p class="home2-about-feature-description"><%= trans('home2Page.maxSpeedFeatureDescription') %></p>
+      </div>
+      <div class="home2-about-feature">
+        <img
+          class="home2-about-feature-image"
+          src="<%= require('../assets/v2/battery.svg') %>"
+          alt="<%= trans('home2Page.efficientFeatureDescription') %>"
+        />
+        <h3 class="home2-about-feature-title"><%= trans('home2Page.efficientFeature') %></h3>
+        <p class="home2-about-feature-description"><%= trans('home2Page.efficientFeatureDescription') %></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="home2-places">
+  <div class="container">
+    <div class="home2-places-main">
+      <h2><%= trans('home2Page.placesTitle') %></h2>
+
+      <div class="home2-places-list">
+        <div class="home2-places-place">
+          <h3>м. Чернышевская</h3>
+          <p>ул. Белинского, 11</p>
+        </div>
+
+        <div class="home2-places-place">
+          <h3>м. Горьковская</h3>
+          <p>Малая Посадская, 15</p>
+        </div>
+
+        <div class="home2-places-place">
+          <h3>м. Василеостровская</h3>
+          <p>6-ая линия В.О., 27</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="home2-places-map">
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

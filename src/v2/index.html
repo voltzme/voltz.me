@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="<%= locale %>">
+<head>
+  <meta charset="utf-8"/>
+  <title><%= trans('home2.title') %></title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <link
+    rel="preload"
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap&subset=cyrillic"
+    type="text/css"
+    as="style"
+  />
+
+  <%= require('html-loader!./_head.html') %>
+</head>
+<body class="home2">
+
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-logo">
+      <img src="/logo.svg" alt="voltz.me"/>
+    </div>
+    <div class="topbar-menu">
+      <nav>
+        <a class="topbar-menu-item --active" href="/"><%= trans('topbar.home') %></a>
+        <a class="topbar-menu-item" href="/"><%= trans('topbar.tours') %></a>
+        <a class="topbar-menu-item" href="/"><%= trans('topbar.about') %></a>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<div class="home2-header">
+  <div class="container">
+    <h1 class="home2-header-title"><%= trans('home2Page.headerTitle') %></h1>
+
+    <a href="#main" class="home2-header-more-btn btn btn-primary">
+      <%= trans('home2Page.headerMoreBtn') %>
+    </a>
+  </div>
+</div>
+
+<div class="home2-about">
+  <div class="container">
+    <div class="home2-about-main">
+      <h2 class="home2-about-title">
+        <span class="home2-about-title-prefix"><%= trans('home2Page.aboutTitlePrefix') %></span>
+        <span><%= trans('home2Page.aboutTitle') %></span>
+      </h2>
+      <p class="home2-about-text">
+        <%= trans('home2Page.aboutText') %>
+      </p>
+
+      <div class="home2-about-features">
+        <div class="home2-about-feature">
+          <img
+            class="home2-about-feature-image"
+            src="<%= require('../assets/v2/speed.svg') %>"
+            alt="<%= trans('home2Page.maxSpeedFeatureDescription') %>"
+          />
+          <div class="home2-about-feature-text">
+            <h3 class="home2-about-feature-title"><%= trans('home2Page.maxSpeedFeature') %></h3>
+            <p class="home2-about-feature-description"><%= trans('home2Page.maxSpeedFeatureDescription') %></p>
+          </div>
+        </div>
+        <div class="home2-about-feature">
+          <img
+            class="home2-about-feature-image"
+            src="<%= require('../assets/v2/battery.svg') %>"
+            alt="<%= trans('home2Page.efficientFeatureDescription') %>"
+          />
+          <div class="home2-about-feature-text">
+            <h3 class="home2-about-feature-title"><%= trans('home2Page.efficientFeature') %></h3>
+            <p class="home2-about-feature-description"><%= trans('home2Page.efficientFeatureDescription') %></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="home2-about-cover">
+      <img src="<%= require('../assets/cover2.jpg') %>" alt="voltz.me"/>
+    </div>
+  </div>
+</div>
+
+<div class="home2-places">
+  <div class="container">
+    <div class="home2-places-main">
+      <h2 class="home2-places-title"><%= trans('home2Page.placesTitle') %></h2>
+
+      <div class="home2-places-list">
+        <div class="home2-places-place">
+          <h3><%= trans("home2Page.placesPlace1Title") %></h3>
+          <address><%= trans("home2Page.placesPlace1Address") %></address>
+        </div>
+
+        <div class="home2-places-place">
+          <h3><%= trans("home2Page.placesPlace2Title") %></h3>
+          <address><%= trans("home2Page.placesPlace2Address") %></address>
+        </div>
+
+        <div class="home2-places-place">
+          <h3><%= trans("home2Page.placesPlace3Title") %></h3>
+          <address><%= trans("home2Page.placesPlace3Address") %></address>
+        </div>
+      </div>
+    </div>
+
+    <div class="home2-places-map">
+      <div class="home2-places-map-map" id="home2Map">
+        <div class="home2-places-map-place" data-latlng="59.937866,30.344814">
+          <h3>voltz.me - <%= trans("home2Page.placesMapPlace1Title") %></h3>
+          <address><%= trans("home2Page.placesMapPlace1Address") %></address>
+          <p><%= trans("home2Page.placesMapPlace1Description") %></p>
+        </div>
+        <div class="home2-places-map-place" data-latlng="59.9573109,30.3281336">
+          <h3>voltz.me - <%= trans("home2Page.placesMapPlace2Title") %></h3>
+          <address><%= trans("home2Page.placesMapPlace2Address") %></address>
+          <p><%= trans("home2Page.placesMapPlace2Description") %></p>
+        </div>
+        <div class="home2-places-map-place" data-latlng="59.942371,30.2777129">
+          <h3>voltz.me - <%= trans("home2Page.placesMapPlace3Title") %></h3>
+          <address><%= trans("home2Page.placesMapPlace3Address") %></address>
+          <p><%= trans("home2Page.placesMapPlace3Description") %></p>
+        </div>
+      </div>
+      <script type="text/javascript">
+        let map;
+        let markers = [];
+
+        var mapPlaces = document.querySelectorAll('.home2-places-map-place');
+
+        function initMap() {
+          map = new google.maps.Map(document.getElementById('home2Map'), {
+            center: {lat: 59.945883, lng: 30.311556},
+            zoom: 13,
+            minZoom: 11,
+            maxZoom: 15,
+            fullscreenControl: false,
+            mapTypeControl: false,
+            streetViewControl: false,
+
+            styles: [
+              {
+                featureType: 'poi.business',
+                stylers: [{visibility: 'off'}],
+              },
+              {
+                featureType: 'transit',
+                elementType: 'labels.icon',
+                stylers: [{visibility: 'off'}],
+              },
+            ],
+
+            restriction: {
+              latLngBounds: {
+                south: 59.837616,
+                north: 60.036216,
+                west: 30.161628,
+                east: 30.498926,
+              },
+              strictBounds: false,
+            },
+          });
+
+          mapPlaces.forEach((node) => {
+            const [lat, lng] = node.getAttribute('data-latlng').split(',');
+            const name = node.querySelector('h3').textContent;
+
+            const marker = new google.maps.Marker({
+              title: name,
+              map: map,
+              position: {
+                lat: parseFloat(lat),
+                lng: parseFloat(lng),
+              },
+            });
+
+            const infoWindow = new google.maps.InfoWindow({
+              content: node.innerHTML,
+            });
+
+            markers.push({
+              position: {
+                lat, lng,
+              },
+              map: map,
+              title: node.querySelector('h3').textContent,
+            });
+            marker.addListener('click', function() {
+              infoWindow.open(map, marker);
+            });
+          });
+        }
+      </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAHrSOw7em7FEgkXDxC_MDnjCVA46gyr8&callback=initMap"
+              async defer></script>
+    </div>
+  </div>
+</div>
+
+<div class="home2-prices">
+  <div class="container">
+    <h2 class="home2-prices-title"><%= trans('home2Page.prices') %></h2>
+
+    <table class="home2-prices-table">
+      <tr class="home2-prices-row">
+        <th>
+          <div class="home2-prices-row-header">
+            <%= trans('price.perHour') %>
+          </div>
+        </th>
+        <td>
+          <span class="home2-prices-row-value">
+            500 <%= trans('RUB') %>
+          </span>
+          <span class="home2-prices-row-value-description"><%= trans('price.firstHour') %></span>
+        </td>
+        <td>
+          <span class="home2-prices-row-extra-value">+ 100 <%= trans('RUB') %></span>
+          <span class="home2-prices-row-extra-value-description"><%= trans('price.nextHours') %></span>
+        </td>
+      </tr>
+
+      <tr class="home2-prices-row">
+        <th>
+          <div class="home2-prices-row-header">
+            <%= trans('price.perDay') %>
+          </div>
+        </th>
+        <td>
+          <span class="home2-prices-row-value">
+            1000 <%= trans('RUB') %>
+          </span>
+          <span class="home2-prices-row-value-description"><%= trans('price.firstDay') %></span>
+        </td>
+        <td>
+          <span class="home2-prices-row-extra-value">+ 800 <%= trans('RUB') %></span>
+          <span class="home2-prices-row-extra-value-description"><%= trans('price.nextDays') %></span>
+        </td>
+      </tr>
+
+
+      <tr class="home2-prices-row">
+        <th>
+          <span class="home2-prices-row-header">
+            <%= trans('price.per12Hours') %>
+          </span>
+          <span class="home2-prices-row-header-description">
+            <%= trans('price.per12HoursDescription') %>
+          </span>
+        </th>
+        <td>
+          <span class="home2-prices-row-value">800 <%= trans('RUB') %></span>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<div class="home2-faq">
+  <div class="container">
+    <h2 class="home2-faq-title"><%= trans('main.faq.title') %></h2>
+
+    <div class="home2-faq-items">
+      <% for (let i = 1; i <= 6; i++) { %>
+      <div class="home2-faq-item">
+        <div class="home2-faq-item-question">
+          <span><%= trans(`home2Page.faqItem${i}Question`) %></span>
+          <div class="home2-faq-item-toggle"></div>
+        </div>
+        <div class="home2-faq-item-answer"><%= trans(`home2Page.faqItem${i}Answer`) %></div>
+      </div>
+      <% } %>
+    </div>
+  </div>
+</div>
+
+<div class="home2-book-form">
+  <div class="container">
+    <h2></h2>
+
+
+  </div>
+</div>
+
+</body>
+</html>

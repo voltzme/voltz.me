@@ -1,126 +1,3 @@
-msgid "main.title"
-msgstr ""
-
-msgid "main.intro.title"
-msgstr ""
-
-msgid "main.intro.more"
-msgstr ""
-
-msgid "main.info.title"
-msgstr ""
-
-msgid "main.info.text"
-msgstr ""
-
-msgid "main.info.feature1.title"
-msgstr ""
-
-msgid "main.info.feature1.text"
-msgstr ""
-
-msgid "main.info.feature2.title"
-msgstr ""
-
-msgid "main.info.feature2.text"
-msgstr ""
-
-msgid "main.info.feature3.title"
-msgstr ""
-
-msgid "main.info.feature3.text"
-msgstr ""
-
-msgid "main.process.title"
-msgstr ""
-
-msgid "main.process.step1.title"
-msgstr ""
-
-msgid "main.process.step2.title"
-msgstr ""
-
-msgid "main.process.step3.title"
-msgstr ""
-
-msgid "main.action"
-msgstr ""
-
-msgid "main.map.title"
-msgstr ""
-
-msgid "main.map.text"
-msgstr ""
-
-msgid "main.faq.title"
-msgstr ""
-
-msgid "main.faq.item1.question"
-msgstr ""
-
-msgid "main.faq.item1.answer"
-msgstr ""
-
-msgid "main.faq.item2.question"
-msgstr ""
-
-msgid "main.faq.item2.answer"
-msgstr ""
-
-msgid "main.faq.item3.question"
-msgstr ""
-
-msgid "main.faq.item3.answer"
-msgstr ""
-
-msgid "main.faq.item4.question"
-msgstr ""
-
-msgid "main.faq.item4.answer"
-msgstr ""
-
-msgid "main.faq.item5.question"
-msgstr ""
-
-msgid "main.faq.item5.answer"
-msgstr ""
-
-msgid "main.faq.item6.question"
-msgstr ""
-
-msgid "main.faq.item6.answer"
-msgstr ""
-
-msgid "privacyPolicy"
-msgstr ""
-
-msgid "bookForm.title"
-msgstr ""
-
-msgid "bookForm.nameLabel"
-msgstr ""
-
-msgid "bookForm.namePlaceholder"
-msgstr ""
-
-msgid "bookForm.phoneLabel"
-msgstr ""
-
-msgid "bookForm.phonePlaceholder"
-msgstr ""
-
-msgid "bookForm.submit"
-msgstr ""
-
-msgid "bookForm.cancel"
-msgstr ""
-
-msgid "bookForm.privacyPolicyNote"
-msgstr ""
-
-msgid "book.title"
-msgstr ""
-
 msgid "book2.title"
 msgstr ""
 
@@ -149,6 +26,54 @@ msgid "book2.info.feature3.title"
 msgstr ""
 
 msgid "book2.info.feature3.text"
+msgstr ""
+
+msgid "book2Page.placesTitle"
+msgstr ""
+
+msgid "book2Page.placesPlace1Title"
+msgstr ""
+
+msgid "book2Page.placesPlace1Address"
+msgstr ""
+
+msgid "book2Page.placesPlace2Title"
+msgstr ""
+
+msgid "book2Page.placesPlace2Address"
+msgstr ""
+
+msgid "book2Page.placesPlace3Title"
+msgstr ""
+
+msgid "book2Page.placesPlace3Address"
+msgstr ""
+
+msgid "book2Page.placesMapPlace1Title"
+msgstr ""
+
+msgid "book2Page.placesMapPlace1Address"
+msgstr ""
+
+msgid "book2Page.placesMapPlace1Description"
+msgstr ""
+
+msgid "book2Page.placesMapPlace2Title"
+msgstr ""
+
+msgid "book2Page.placesMapPlace2Address"
+msgstr ""
+
+msgid "book2Page.placesMapPlace2Description"
+msgstr ""
+
+msgid "book2Page.placesMapPlace3Title"
+msgstr ""
+
+msgid "book2Page.placesMapPlace3Address"
+msgstr ""
+
+msgid "book2Page.placesMapPlace3Description"
 msgstr ""
 
 msgid "book2.prices.title"
@@ -203,6 +128,15 @@ msgid "book2.form.or"
 msgstr ""
 
 msgid "book2.form.privacyPolicyNote"
+msgstr ""
+
+msgid "main.title"
+msgstr ""
+
+msgid "privacyPolicy"
+msgstr ""
+
+msgid "book.title"
 msgstr ""
 
 msgid "bookForm.success"

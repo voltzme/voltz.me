@@ -17,11 +17,12 @@ const defaultLocale = 'ru';
 const locales = ['en'];
 
 const files = [
-  ['/', 'index.html'],
+  ['/', 'book2.html'],
   ['/privacy/', 'privacy.html'],
-  ['/book/', 'book.html'],
-  ['/book2/', 'book2.html'],
+  ['/book/', '_redirect.html'],
+  ['/book2/', '_redirect.html'],
   ['/book/success/', 'book_success.html'],
+  //['/v2/', 'v2/index.html'],
 ];
 
 const gt = new GetText();

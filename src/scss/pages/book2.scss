@@ -104,7 +104,7 @@
 
 
   &-info {
-    padding: 60px 0 84px;
+    padding: 84px 0 120px;
 
     &-features {
       display: flex;
@@ -145,6 +145,73 @@
     }
   }
 
+
+  &-places {
+    padding-bottom: 100px;
+
+    & > .container {
+      display: flex;
+
+      @media (max-width: 780px) {
+        flex-direction: column;
+      }
+    }
+
+    &-title {
+      font-size: 28px;
+      font-weight: 300;
+      margin-bottom: 32px;
+
+      @media (max-width: 780px) {
+        text-align: center;
+      }
+
+    }
+
+    &-list {
+      min-width: 260px;
+    }
+
+    &-place {
+      padding-left: 60px;
+      background: url('../assets/v2/place.svg') no-repeat 4px 2px;
+      background-size: auto 43px;
+
+      & + & {
+        margin-top: 24px;
+      }
+
+      h3 {
+        margin: 0;
+        font-weight: normal;
+      }
+
+      address {
+        margin: 4px 0 0;
+        font-weight: 300;
+        font-style: normal;
+      }
+    }
+
+    &-map {
+      width: 100%;
+      margin-left: 60px;
+
+      @media (max-width: 780px) {
+        margin-left: 0;
+        margin-top: 60px;
+      }
+    }
+
+    &-map-map {
+      height: 400px;
+      width: 100%;
+    }
+
+    &-map-place {
+      display: none;
+    }
+  }
 
   &-prices {
     padding: 0 0 84px 0;
@@ -282,6 +349,8 @@
 
     &-or {
       text-align: center;
+      font-weight: 500;
+      color: #333;
     }
 
     &-submit {

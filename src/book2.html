@@ -81,6 +81,129 @@
   </div>
 </div>
 
+<div class="book2-places">
+  <div class="container">
+    <h2 class="book2-places-title"><%= trans('book2Page.placesTitle') %></h2>
+  </div>
+  <div class="container">
+    <div class="book2-places-main">
+      <div class="book2-places-list">
+        <div class="book2-places-place">
+          <h3><%= trans("book2Page.placesPlace1Title") %></h3>
+          <address><%= trans("book2Page.placesPlace1Address") %></address>
+        </div>
+
+        <div class="book2-places-place">
+          <h3><%= trans("book2Page.placesPlace2Title") %></h3>
+          <address><%= trans("book2Page.placesPlace2Address") %></address>
+        </div>
+
+        <div class="book2-places-place">
+          <h3><%= trans("book2Page.placesPlace3Title") %></h3>
+          <address><%= trans("book2Page.placesPlace3Address") %></address>
+        </div>
+      </div>
+    </div>
+
+    <div class="book2-places-map">
+      <div class="book2-places-map-map" id="book2-Map">
+        <div class="book2-places-map-place" data-latlng="59.937866,30.344814">
+          <h3>voltz.me - <%= trans("book2Page.placesMapPlace1Title") %></h3>
+          <address><%= trans("book2Page.placesMapPlace1Address") %></address>
+          <p><%= trans("book2Page.placesMapPlace1Description") %></p>
+        </div>
+        <div class="book2-places-map-place" data-latlng="59.9573109,30.3281336">
+          <h3>voltz.me - <%= trans("book2Page.placesMapPlace2Title") %></h3>
+          <address><%= trans("book2Page.placesMapPlace2Address") %></address>
+          <p><%= trans("book2Page.placesMapPlace2Description") %></p>
+        </div>
+        <div class="book2-places-map-place" data-latlng="59.942371,30.2777129">
+          <h3>voltz.me - <%= trans("book2Page.placesMapPlace3Title") %></h3>
+          <address><%= trans("book2Page.placesMapPlace3Address") %></address>
+          <p><%= trans("book2Page.placesMapPlace3Description") %></p>
+        </div>
+      </div>
+      <script type="text/javascript">
+        let map;
+        let markers = [];
+        let infoWindows = [];
+
+        var mapPlaces = document.querySelectorAll('.book2-places-map-place');
+
+        function initMap() {
+          map = new google.maps.Map(document.getElementById('book2-Map'), {
+            center: {lat: 59.945883, lng: 30.311556},
+            zoom: 13,
+            minZoom: 11,
+            maxZoom: 15,
+            fullscreenControl: false,
+            mapTypeControl: false,
+            streetViewControl: false,
+
+            styles: [
+              {
+                featureType: 'poi.business',
+                stylers: [{visibility: 'off'}],
+              },
+              {
+                featureType: 'transit',
+                elementType: 'labels.icon',
+                stylers: [{visibility: 'off'}],
+              },
+            ],
+
+            restriction: {
+              latLngBounds: {
+                south: 59.837616,
+                north: 60.036216,
+                west: 30.161628,
+                east: 30.498926,
+              },
+              strictBounds: false,
+            },
+          });
+
+          mapPlaces.forEach((node) => {
+            const [lat, lng] = node.getAttribute('data-latlng').split(',');
+            const name = node.querySelector('h3').textContent;
+
+            const marker = new google.maps.Marker({
+              title: name,
+              map: map,
+              position: {
+                lat: parseFloat(lat),
+                lng: parseFloat(lng),
+              },
+            });
+
+            const infoWindow = new google.maps.InfoWindow({
+              content: node.innerHTML,
+              maxWidth: 280,
+            });
+
+            infoWindows.push(infoWindow);
+
+            markers.push({
+              position: {
+                lat, lng,
+              },
+              map: map,
+              title: node.querySelector('h3').textContent,
+            });
+            marker.addListener('click', function() {
+              infoWindows.forEach((infoWindow) => infoWindow.close());
+              infoWindow.open(map, marker);
+            });
+          });
+        }
+      </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAHrSOw7em7FEgkXDxC_MDnjCVA46gyr8&callback=initMap"
+              async defer></script>
+    </div>
+  </div>
+</div>
+
+
 <div class="book2-prices">
   <div class="container">
     <h2 class="book2-prices-title"><%= trans('book2.prices.title') %></h2>
@@ -195,7 +318,7 @@
       <div class="form-item book2-form-buttons">
         <a target="_blank" href="https://vk.me/voltzme" class="btn btn-vk book2-form-submit">vk.me/<span>voltzme</span></a>
         <a target="_blank" href="https://m.me/voltzapp" class="btn btn-fb book2-form-submit">m.me/<span>voltzapp</span></a>
-        <a target="_blank" href="https://m.me/voltzapp" class="btn btn-whatsapp book2-form-submit">WhatsApp</a>
+        <a target="_blank" href="https://wa.me/78124099372" class="btn btn-whatsapp book2-form-submit">WhatsApp</a>
       </div>
 
       <p class="book2-form-privacy-note">
