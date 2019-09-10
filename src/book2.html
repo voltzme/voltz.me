@@ -132,8 +132,7 @@
 
         function initMap() {
           map = new google.maps.Map(document.getElementById('book2-Map'), {
-            center: {lat: 59.945883, lng: 30.311556},
-            zoom: 11,
+            zoom: 12,
             minZoom: 11,
             maxZoom: 15,
             fullscreenControl: false,
@@ -162,6 +161,19 @@
               strictBounds: false,
             },
           });
+
+          let latLngBounds = new google.maps.LatLngBounds();
+          Array.from(mapPlaces).map(node => {
+            const [lat, lng] = node.getAttribute('data-latlng').split(',');
+
+            latLngBounds.extend(new google.maps.LatLng(
+              parseFloat(lat),
+              parseFloat(lng)
+            ));
+          });
+
+          map.setCenter(latLngBounds.getCenter());
+          map.fitBounds(latLngBounds);
 
           mapPlaces.forEach((node) => {
             const [lat, lng] = node.getAttribute('data-latlng').split(',');
