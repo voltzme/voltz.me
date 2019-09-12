@@ -188,10 +188,10 @@ msgid "book2Page.placesTitle"
 msgstr "Карта присутствия"
 
 msgid "book2Page.placesPlace1Title"
-msgstr "м. Чернышевская"
+msgstr "м. Лиговский Проспект"
 
 msgid "book2Page.placesPlace1Address"
-msgstr "ул. Белинского, 11"
+msgstr "ул. Марата, 59"
 
 msgid "book2Page.placesPlace2Title"
 msgstr "м. Горьковская"
@@ -206,15 +206,15 @@ msgid "book2Page.placesPlace3Address"
 msgstr "6-ая линия В.О., 27"
 
 msgid "book2Page.placesMapPlace1Title"
-msgstr "Чернышевская"
+msgstr "Лиговский"
 
 msgid "book2Page.placesMapPlace1Address"
-msgstr "ул. Белинского, 11"
+msgstr "ул. Марата, 59"
 
 msgid "book2Page.placesMapPlace1Description"
 msgstr ""
-"Мы находимся на территории Red House Hostel, снаружи есть заметный красный "
-"стенд с названием отеля."
+"Мы находимся на территории отеля Variant M59, входите в арку, дверь сразу напротив"
+""
 
 msgid "book2Page.placesMapPlace2Title"
 msgstr "Петроградская"

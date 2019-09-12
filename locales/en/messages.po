@@ -50,10 +50,10 @@ msgid "book2Page.placesTitle"
 msgstr "Places"
 
 msgid "book2Page.placesPlace1Title"
-msgstr "Chernyshevskaya"
+msgstr "Ligovsky"
 
 msgid "book2Page.placesPlace1Address"
-msgstr "Ulitsa Belinskogo, 11"
+msgstr "Ulitsa Marata, 59"
 
 msgid "book2Page.placesPlace2Title"
 msgstr "Gorkovskaya"
@@ -68,13 +68,13 @@ msgid "book2Page.placesPlace3Address"
 msgstr "6-Ya Liniya V.o., 27"
 
 msgid "book2Page.placesMapPlace1Title"
-msgstr "Chernyshevskaya"
+msgstr "Ligovsky"
 
 msgid "book2Page.placesMapPlace1Address"
-msgstr "Ulitsa Belinskogo, 11"
+msgstr "Ulitsa Marata, 59"
 
 msgid "book2Page.placesMapPlace1Description"
-msgstr "We are placed at Red House Hostel"
+msgstr "We are placed at Variant M59 Hotel"
 
 msgid "book2Page.placesMapPlace2Title"
 msgstr "Gorkovskaya"
